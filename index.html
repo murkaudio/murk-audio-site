@@ -152,7 +152,39 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .nav-links{display:none;}
 .nav-links a{color:rgba(160,200,240,0.35);text-decoration:none;font-size:9px;letter-spacing:3px;text-transform:uppercase;font-family:'Share Tech Mono',monospace,'Courier New',monospace;}
 .nav-cta{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:8px;letter-spacing:3px;color:#80b0d8;border:0.5px solid rgba(64,128,192,0.3);padding:6px 12px;text-transform:uppercase;white-space:nowrap;}
-@media(min-width:640px){.nav-links{display:flex;gap:20px;list-style:none;}}
+@media(min-width:640px){.nav-links{display:flex;gap:20px;list-style:none;align-items:center;}}
+
+/* Social dropdown */
+.nav-follow{position:relative;}
+.nav-follow-btn{
+  font-family:'Share Tech Mono',monospace,'Courier New',monospace;
+  font-size:9px;letter-spacing:3px;color:rgba(160,200,240,0.35);
+  text-transform:uppercase;cursor:pointer;background:none;border:none;
+  padding:0;white-space:nowrap;
+}
+.nav-follow-btn:hover{color:rgba(160,200,240,0.7);}
+.nav-dropdown{
+  display:none;
+  position:absolute;top:calc(100% + 12px);right:0;
+  background:rgba(5,8,14,0.97);
+  border:0.5px solid rgba(64,128,192,0.2);
+  min-width:160px;
+  z-index:200;
+  flex-direction:column;
+  gap:0;
+}
+.nav-follow:hover .nav-dropdown{display:flex;}
+.nav-dropdown a{
+  font-family:'Share Tech Mono',monospace,'Courier New',monospace;
+  font-size:8px;letter-spacing:3px;color:rgba(140,190,230,0.5);
+  text-decoration:none;text-transform:uppercase;
+  padding:10px 16px;
+  border-bottom:0.5px solid rgba(64,128,192,0.08);
+  white-space:nowrap;
+  transition:color 0.15s,background 0.15s;
+}
+.nav-dropdown a:last-child{border-bottom:none;}
+.nav-dropdown a:hover{color:#aad4f8;background:rgba(30,60,100,0.2);}
 .hero{min-height:520px;display:flex;align-items:flex-end;padding:80px 24px 56px;position:relative;border-bottom:0.5px solid rgba(64,128,192,0.1);overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 72% 38%,rgba(25,55,115,0.22) 0%,transparent 70%),radial-gradient(ellipse 35% 45% at 18% 75%,rgba(15,35,85,0.14) 0%,transparent 60%);}
 .hero-scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(40,80,140,0.025) 3px,rgba(40,80,140,0.025) 4px);pointer-events:none;}
@@ -237,6 +269,17 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
     <li><a href="#about">About</a></li>
     <li><a href="mailto:hello@murk.audio">Press</a></li>
     <li><a href="https://patreon.com/TheMurk" target="_blank">Patreon</a></li>
+    <li class="nav-follow">
+      <button class="nav-follow-btn">Follow Us &#9662;</button>
+      <div class="nav-dropdown">
+        <a href="https://instagram.com/murkaudio" target="_blank">Instagram</a>
+        <a href="https://tiktok.com/@murkaudio" target="_blank">TikTok</a>
+        <a href="https://x.com/murkaudio" target="_blank">X / Twitter</a>
+        <a href="https://bsky.app/profile/murkaudio.bsky.social" target="_blank">Bluesky</a>
+        <a href="https://reddit.com/u/murkaudio" target="_blank">Reddit</a>
+        <a href="https://patreon.com/TheMurk" target="_blank">Patreon</a>
+      </div>
+    </li>
   </ul>
   <div class="nav-cta">Listen Free</div>
 </nav>
@@ -279,7 +322,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
           <circle cx="18" cy="14" r="0.7" fill="#9090c0" opacity="0.55"/><circle cx="44" cy="8" r="0.5" fill="#8090b0" opacity="0.5"/><circle cx="72" cy="22" r="0.9" fill="#a0a0d0" opacity="0.6"/><circle cx="105" cy="10" r="0.6" fill="#8090b0" opacity="0.45"/><circle cx="155" cy="12" r="0.7" fill="#9090c0" opacity="0.5"/><circle cx="210" cy="8" r="0.8" fill="#a0a0d0" opacity="0.55"/><circle cx="265" cy="6" r="0.6" fill="#9090c0" opacity="0.5"/><circle cx="292" cy="25" r="0.7" fill="#8090b0" opacity="0.5"/><circle cx="345" cy="35" r="0.8" fill="#9090c0" opacity="0.5"/>
           <ellipse cx="326" cy="38" rx="52" ry="44" fill="#c8d8f8" opacity="0.06"/>
           <circle cx="326" cy="38" r="20" fill="#c2d0ec" opacity="0.72"/>
-          <circle cx="332" cy="36" r="17" fill="#040810"/>
+          <circle cx="334" cy="36" r="16" fill="#040810"/>
           <ellipse cx="100" cy="70" rx="90" ry="18" fill="#060c1a" opacity="0.7"/>
           <ellipse cx="400" cy="60" rx="75" ry="16" fill="#060c1a" opacity="0.65"/>
           <rect x="0" y="210" width="480" height="60" fill="#020408"/>
@@ -327,9 +370,9 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
           <rect x="312" y="82" width="28" height="55" fill="#020408"/>
           <polygon points="312,82 326,60 340,82" fill="#010306"/>
           <rect x="319" y="90" width="10" height="15" fill="#2a1e08" opacity="0.6" rx="1"/><rect x="319" y="115" width="10" height="15" fill="#06070e" rx="1"/>
-          <rect x="170" y="25" width="12" height="32" fill="#020407"/><rect x="166" y="22" width="20" height="5" fill="#020407"/>
-          <rect x="298" y="30" width="12" height="28" fill="#020407"/><rect x="294" y="27" width="20" height="5" fill="#020407"/>
-          <rect x="228" y="10" width="10" height="20" fill="#020406"/><rect x="225" y="8" width="16" height="4" fill="#020406"/>
+          <rect x="170" y="42" width="12" height="40" fill="#020407"/><rect x="166" y="39" width="20" height="5" fill="#020407"/>
+          <rect x="298" y="42" width="12" height="40" fill="#020407"/><rect x="294" y="39" width="20" height="5" fill="#020407"/>
+          <rect x="228" y="22" width="10" height="22" fill="#020406"/><rect x="225" y="19" width="16" height="5" fill="#020406"/>
           <rect x="0" y="195" width="480" height="75" fill="url(#foggrad)"/>
           <ellipse cx="240" cy="215" rx="220" ry="20" fill="#050a14" opacity="0.5"/>
           <text x="240" y="258" text-anchor="middle" font-family="'Orbitron',sans-serif" font-size="13" font-weight="900" letter-spacing="6" fill="#1a2e50" opacity="0.85">BLACKWOOD MANOR</text>
@@ -379,7 +422,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
         <div class="show-tag">Development · Pilot Written</div>
         <div class="show-title">Dead Signal</div>
         <div class="show-genre">Crime Noir</div>
-        <div class="show-desc">Portland. 1951. A detective who hears things that aren't there — or aren't they.</div>
+        <div class="show-desc">Portland. 1951. A detective who hears things that aren't there — or are they?</div>
         <div class="show-meta">
           <div class="show-meta-item">6 Episodes</div>
           <div class="show-meta-item">~40 min</div>
@@ -654,11 +697,8 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 <footer class="footer">
   <div class="footer-brand">The Murk Audio LLC &nbsp;·&nbsp; Portland, OR</div>
   <ul class="footer-links">
-    <li><a href="https://instagram.com/murkaudio" target="_blank">Instagram</a></li>
-    <li><a href="https://tiktok.com/@murkaudio" target="_blank">TikTok</a></li>
-    <li><a href="https://x.com/murkaudio" target="_blank">X</a></li>
-    <li><a href="https://patreon.com/TheMurk" target="_blank">Patreon</a></li>
     <li><a href="mailto:hello@murk.audio">Press</a></li>
+    <li><a href="mailto:hello@murk.audio">Contact</a></li>
   </ul>
   <div class="footer-copy">© 2026 The Murk Audio LLC</div>
 </footer>
@@ -745,6 +785,21 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
   } else {
     setTimeout(init, 600);
   }
+})();
+
+// Follow Us dropdown — click toggle for mobile and previews
+(function(){
+  const btn = document.querySelector('.nav-follow-btn');
+  const dd  = document.querySelector('.nav-dropdown');
+  if(!btn || !dd) return;
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    const open = dd.style.display === 'flex';
+    dd.style.display = open ? 'none' : 'flex';
+  });
+  document.addEventListener('click', function(){
+    if(dd) dd.style.display = 'none';
+  });
 })();
 </script>
 </body>
