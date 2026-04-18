@@ -162,7 +162,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .hero-the-wrap{margin-bottom:6px;padding-top:8px;}
 .hero-the{font-family:'Syncopate',sans-serif,'Arial',sans-serif;font-size:11px;letter-spacing:9px;color:#80b0d8;display:block;}
 .hero-murk{font-family:'Orbitron',sans-serif,'Arial',sans-serif;font-size:clamp(56px,10vw,88px);font-weight:900;letter-spacing:8px;color:transparent;background:linear-gradient(180deg,#ffffff 0%,#aad4f8 35%,#6aaee8 70%,#4488cc 100%);-webkit-background-clip:text;background-clip:text;line-height:1;display:block;}
-.hero-rule{width:74px;height:1px;background:linear-gradient(90deg,transparent,#5599dd,transparent);margin:18px 0 12px;}
+.hero-rule{height:1px;background:linear-gradient(90deg,transparent,#5599dd,transparent);margin:18px 0 8px;}
 .hero-sub{font-family:'Syncopate',sans-serif,'Arial',sans-serif;font-size:7px;letter-spacing:6px;color:#7aaad8;display:block;margin-bottom:16px;}
 .hero-bars{display:flex;gap:0;align-items:center;height:28px;margin-bottom:32px;overflow:hidden;}
 .hero-bar{width:2px;margin-right:1px;background:linear-gradient(180deg,#aad4f8,#4488cc);border-radius:1px;animation:radioBreath var(--dur,3.5s) ease-in-out infinite;}
@@ -250,9 +250,9 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
       <span class="hero-the">THE</span>
       <span class="hero-murk">MURK</span>
     </div>
-    <div class="hero-rule"></div>
-    <span class="hero-sub">audio dramas &nbsp;·&nbsp; portland</span>
+    <div class="hero-rule" id="heroRule"></div>
     <div class="hero-bars" id="heroBars"></div>
+    <span class="hero-sub">audio dramas &nbsp;·&nbsp; portland</span>
     <p class="hero-tagline">Original scripted audio dramas. Stories that live in the dark — produced in Portland, heard everywhere. No visuals. No safety net. Just sound.</p>
     <div class="hero-cta">
       <div class="btn-primary">&#9632; Listen Free</div>
@@ -279,7 +279,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
           <circle cx="18" cy="14" r="0.7" fill="#9090c0" opacity="0.55"/><circle cx="44" cy="8" r="0.5" fill="#8090b0" opacity="0.5"/><circle cx="72" cy="22" r="0.9" fill="#a0a0d0" opacity="0.6"/><circle cx="105" cy="10" r="0.6" fill="#8090b0" opacity="0.45"/><circle cx="155" cy="12" r="0.7" fill="#9090c0" opacity="0.5"/><circle cx="210" cy="8" r="0.8" fill="#a0a0d0" opacity="0.55"/><circle cx="265" cy="6" r="0.6" fill="#9090c0" opacity="0.5"/><circle cx="292" cy="25" r="0.7" fill="#8090b0" opacity="0.5"/><circle cx="345" cy="35" r="0.8" fill="#9090c0" opacity="0.5"/>
           <ellipse cx="326" cy="38" rx="52" ry="44" fill="#c8d8f8" opacity="0.06"/>
           <circle cx="326" cy="38" r="20" fill="#c2d0ec" opacity="0.72"/>
-          <circle cx="331" cy="35" r="18" fill="#040810"/>
+          <circle cx="332" cy="36" r="17" fill="#040810"/>
           <ellipse cx="100" cy="70" rx="90" ry="18" fill="#060c1a" opacity="0.7"/>
           <ellipse cx="400" cy="60" rx="75" ry="16" fill="#060c1a" opacity="0.65"/>
           <rect x="0" y="210" width="480" height="60" fill="#020408"/>
@@ -391,24 +391,202 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
       <div class="show-poster">
         <svg width="100%" viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <radialGradient id="sg" cx="40%" cy="45%" r="50%"><stop offset="0%" stop-color="#060c18"/><stop offset="100%" stop-color="#020406"/></radialGradient>
-            <radialGradient id="pl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1a2840"/><stop offset="100%" stop-color="#0a1420"/></radialGradient>
+            <radialGradient id="sg2" cx="35%" cy="40%" r="55%">
+              <stop offset="0%" stop-color="#07101e"/>
+              <stop offset="100%" stop-color="#020406"/>
+            </radialGradient>
+            <radialGradient id="pl2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#1e304a"/>
+              <stop offset="60%" stop-color="#0e1e30"/>
+              <stop offset="100%" stop-color="#060e18"/>
+            </radialGradient>
+            <radialGradient id="sungl" cx="85%" cy="15%" r="30%">
+              <stop offset="0%" stop-color="#c8d4e8" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#020406" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="panelL" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1a3050"/>
+              <stop offset="40%" stop-color="#0d2040"/>
+              <stop offset="100%" stop-color="#081428"/>
+            </linearGradient>
+            <linearGradient id="panelR" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1a3050"/>
+              <stop offset="40%" stop-color="#0d2040"/>
+              <stop offset="100%" stop-color="#081428"/>
+            </linearGradient>
+            <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1e2a3a"/>
+              <stop offset="100%" stop-color="#0a1220"/>
+            </linearGradient>
+            <linearGradient id="trussGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0d1828"/>
+              <stop offset="50%" stop-color="#162030"/>
+              <stop offset="100%" stop-color="#0d1828"/>
+            </linearGradient>
           </defs>
-          <rect width="200" height="140" fill="url(#sg)"/>
-          <circle cx="55" cy="8" r="0.8" fill="#9090c0" opacity="0.55"/><circle cx="110" cy="10" r="0.7" fill="#7080a0" opacity="0.45"/><circle cx="165" cy="8" r="0.8" fill="#9090c0" opacity="0.55"/><circle cx="185" cy="18" r="0.6" fill="#7080a0" opacity="0.45"/>
-          <circle cx="155" cy="35" r="22" fill="url(#pl)" opacity="0.5"/>
-          <ellipse cx="155" cy="35" rx="34" ry="8" fill="none" stroke="#1a2840" stroke-width="1.5" opacity="0.4"/>
-          <circle cx="80" cy="85" r="18" fill="#060c16" stroke="#0d1e34" stroke-width="0.75"/>
-          <line x1="62" y1="85" x2="30" y2="85" stroke="#0a1828" stroke-width="2"/>
-          <line x1="98" y1="85" x2="130" y2="85" stroke="#0a1828" stroke-width="2"/>
-          <line x1="80" y1="67" x2="80" y2="45" stroke="#0a1828" stroke-width="2"/>
-          <rect x="18" y="78" width="22" height="14" fill="#0a1628" stroke="#0d1e34" stroke-width="0.5"/>
-          <rect x="122" y="78" width="22" height="14" fill="#0a1628" stroke="#0d1e34" stroke-width="0.5"/>
-          <ellipse cx="80" cy="45" rx="12" ry="5" fill="#080e1a" stroke="#0d1e34" stroke-width="0.75"/>
-          <circle cx="80" cy="85" r="8" fill="#070d18" stroke="#102040" stroke-width="0.5"/>
-          <circle cx="87" cy="80" r="2" fill="#3060a0" opacity="0.5"/>
-          <circle cx="73" cy="80" r="2" fill="#a03020" opacity="0.4"/>
-          <text x="100" y="133" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="8" letter-spacing="3" fill="#0d1e30" opacity="0.8">RELAY · SECTOR 7</text>
+
+          <!-- Deep space background -->
+          <rect width="200" height="140" fill="url(#sg2)"/>
+          <rect width="200" height="140" fill="url(#sungl)"/>
+
+          <!-- Stars — dense field, varied brightness -->
+          <circle cx="8"   cy="6"   r="0.6" fill="#a0a8c0" opacity="0.7"/>
+          <circle cx="22"  cy="18"  r="0.4" fill="#8090b0" opacity="0.5"/>
+          <circle cx="38"  cy="4"   r="0.7" fill="#b0b8d0" opacity="0.65"/>
+          <circle cx="52"  cy="12"  r="0.4" fill="#8090b0" opacity="0.45"/>
+          <circle cx="65"  cy="3"   r="0.5" fill="#9090c0" opacity="0.55"/>
+          <circle cx="78"  cy="20"  r="0.3" fill="#7080a0" opacity="0.4"/>
+          <circle cx="90"  cy="8"   r="0.6" fill="#a0a8c0" opacity="0.6"/>
+          <circle cx="108" cy="14"  r="0.4" fill="#8090b0" opacity="0.5"/>
+          <circle cx="120" cy="5"   r="0.5" fill="#9090c0" opacity="0.55"/>
+          <circle cx="140" cy="18"  r="0.3" fill="#7080a0" opacity="0.4"/>
+          <circle cx="155" cy="7"   r="0.6" fill="#a0a8c0" opacity="0.65"/>
+          <circle cx="168" cy="22"  r="0.4" fill="#8090b0" opacity="0.5"/>
+          <circle cx="182" cy="10"  r="0.5" fill="#9090c0" opacity="0.55"/>
+          <circle cx="194" cy="3"   r="0.7" fill="#b0b8d0" opacity="0.6"/>
+          <circle cx="15"  cy="32"  r="0.3" fill="#7080a0" opacity="0.35"/>
+          <circle cx="44"  cy="28"  r="0.4" fill="#8090b0" opacity="0.4"/>
+          <circle cx="72"  cy="35"  r="0.3" fill="#6070a0" opacity="0.35"/>
+          <circle cx="188" cy="35"  r="0.4" fill="#8090b0" opacity="0.4"/>
+          <circle cx="6"   cy="55"  r="0.3" fill="#6070a0" opacity="0.3"/>
+          <circle cx="196" cy="60"  r="0.4" fill="#7080a0" opacity="0.35"/>
+          <circle cx="10"  cy="90"  r="0.4" fill="#8090b0" opacity="0.35"/>
+          <circle cx="190" cy="95"  r="0.3" fill="#7080a0" opacity="0.3"/>
+          <circle cx="30"  cy="110" r="0.4" fill="#6070a0" opacity="0.3"/>
+          <circle cx="170" cy="115" r="0.3" fill="#7080a0" opacity="0.3"/>
+
+          <!-- Distant planet — partially visible lower right -->
+          <circle cx="172" cy="118" r="38" fill="url(#pl2)" opacity="0.85"/>
+          <!-- Planet atmosphere rim -->
+          <circle cx="172" cy="118" r="38" fill="none" stroke="#2a4060" stroke-width="1.5" opacity="0.4"/>
+          <!-- Planet surface detail — dark bands -->
+          <ellipse cx="172" cy="108" rx="36" ry="6" fill="#0a1828" opacity="0.35"/>
+          <ellipse cx="172" cy="120" rx="34" ry="4" fill="#0a1828" opacity="0.25"/>
+          <!-- Planet terminator shadow -->
+          <path d="M172 80 Q145 95 148 118 Q148 142 172 156" fill="#04080e" opacity="0.55"/>
+
+          <!-- ═══ SATELLITE — ISS-style realistic ═══ -->
+          <!-- Main truss backbone — horizontal, centre of image -->
+          <rect x="28" y="68" width="144" height="5" fill="url(#trussGrad)" rx="1"/>
+          <!-- Truss detail struts -->
+          <line x1="50"  y1="68" x2="50"  y2="73" stroke="#1a2a40" stroke-width="0.5"/>
+          <line x1="70"  y1="68" x2="70"  y2="73" stroke="#1a2a40" stroke-width="0.5"/>
+          <line x1="90"  y1="68" x2="90"  y2="73" stroke="#1a2a40" stroke-width="0.5"/>
+          <line x1="110" y1="68" x2="110" y2="73" stroke="#1a2a40" stroke-width="0.5"/>
+          <line x1="130" y1="68" x2="130" y2="73" stroke="#1a2a40" stroke-width="0.5"/>
+          <line x1="150" y1="68" x2="150" y2="73" stroke="#1a2a40" stroke-width="0.5"/>
+
+          <!-- ── SOLAR ARRAY LEFT WING ── -->
+          <!-- Arm left -->
+          <rect x="10" y="69.5" width="18" height="2" fill="#0d1828"/>
+          <!-- Panel array left — 4 panels stacked -->
+          <rect x="4"  y="45" width="16" height="9"  fill="url(#panelL)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="4"  y="55" width="16" height="9"  fill="url(#panelL)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="4"  y="65" width="16" height="9"  fill="url(#panelL)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="4"  y="75" width="16" height="9"  fill="url(#panelL)" stroke="#0d2238" stroke-width="0.4"/>
+          <!-- Panel cell lines left -->
+          <line x1="8"  y1="45" x2="8"  y2="84" stroke="#0a1e34" stroke-width="0.4" opacity="0.8"/>
+          <line x1="12" y1="45" x2="12" y2="84" stroke="#0a1e34" stroke-width="0.4" opacity="0.8"/>
+          <line x1="16" y1="45" x2="16" y2="84" stroke="#0a1e34" stroke-width="0.4" opacity="0.8"/>
+          <!-- Solar panel lit edge — sun catchlight -->
+          <line x1="4"  y1="45" x2="4"  y2="84" stroke="#2a4870" stroke-width="0.75" opacity="0.6"/>
+          <!-- Panel connector rod -->
+          <line x1="12" y1="45" x2="12" y2="84" stroke="#1a3050" stroke-width="0.3" opacity="0.5"/>
+
+          <!-- ── SOLAR ARRAY RIGHT WING ── -->
+          <rect x="172" y="69.5" width="18" height="2" fill="#0d1828"/>
+          <rect x="180" y="45" width="16" height="9"  fill="url(#panelR)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="180" y="55" width="16" height="9"  fill="url(#panelR)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="180" y="65" width="16" height="9"  fill="url(#panelR)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="180" y="75" width="16" height="9"  fill="url(#panelR)" stroke="#0d2238" stroke-width="0.4"/>
+          <line x1="184" y1="45" x2="184" y2="84" stroke="#0a1e34" stroke-width="0.4" opacity="0.8"/>
+          <line x1="188" y1="45" x2="188" y2="84" stroke="#0a1e34" stroke-width="0.4" opacity="0.8"/>
+          <line x1="192" y1="45" x2="192" y2="84" stroke="#0a1e34" stroke-width="0.4" opacity="0.8"/>
+          <line x1="196" y1="45" x2="196" y2="84" stroke="#2a4870" stroke-width="0.75" opacity="0.6"/>
+
+          <!-- ── SECONDARY SOLAR ARRAYS — perpendicular, angled ── -->
+          <!-- Left secondary, above truss -->
+          <rect x="36" y="48" width="12" height="7"  fill="url(#panelL)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="36" y="56" width="12" height="7"  fill="url(#panelL)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="36" y="64" width="12" height="5"  fill="url(#panelL)" stroke="#0d2238" stroke-width="0.4"/>
+          <line x1="40" y1="48" x2="40" y2="69" stroke="#0a1e34" stroke-width="0.4" opacity="0.7"/>
+          <line x1="44" y1="48" x2="44" y2="69" stroke="#0a1e34" stroke-width="0.4" opacity="0.7"/>
+          <!-- Arm to truss -->
+          <rect x="42" y="67" width="2" height="4" fill="#0d1828"/>
+
+          <!-- Right secondary -->
+          <rect x="152" y="48" width="12" height="7"  fill="url(#panelR)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="152" y="56" width="12" height="7"  fill="url(#panelR)" stroke="#0d2238" stroke-width="0.4"/>
+          <rect x="152" y="64" width="12" height="5"  fill="url(#panelR)" stroke="#0d2238" stroke-width="0.4"/>
+          <line x1="156" y1="48" x2="156" y2="69" stroke="#0a1e34" stroke-width="0.4" opacity="0.7"/>
+          <line x1="160" y1="48" x2="160" y2="69" stroke="#0a1e34" stroke-width="0.4" opacity="0.7"/>
+          <rect x="156" y="67" width="2" height="4" fill="#0d1828"/>
+
+          <!-- ── MAIN HABITAT MODULES ── -->
+          <!-- Module 1 — large central hab -->
+          <rect x="78" y="57" width="44" height="18" rx="4" fill="url(#bodyGrad)" stroke="#1a2a40" stroke-width="0.75"/>
+          <!-- Module detail — windows -->
+          <rect x="84" y="61" width="5" height="5" rx="1" fill="#0a1828" stroke="#1a3050" stroke-width="0.4"/>
+          <rect x="92" y="61" width="5" height="5" rx="1" fill="#1a2a40" stroke="#1a3050" stroke-width="0.4"/>
+          <rect x="100" y="61" width="5" height="5" rx="1" fill="#0a1828" stroke="#1a3050" stroke-width="0.4"/>
+          <rect x="108" y="61" width="5" height="5" rx="1" fill="#0d2038" stroke="#1a3050" stroke-width="0.4"/>
+          <!-- Active window — lit amber (distress signal) -->
+          <rect x="116" y="61" width="5" height="5" rx="1" fill="#3a1e06" stroke="#2a1404" stroke-width="0.4"/>
+          <!-- Module surface detail -->
+          <line x1="78"  y1="65" x2="122" y2="65" stroke="#1a2a40" stroke-width="0.4" opacity="0.6"/>
+          <line x1="78"  y1="69" x2="122" y2="69" stroke="#1a2a40" stroke-width="0.4" opacity="0.4"/>
+          <!-- Module end caps -->
+          <rect x="122" y="59" width="6" height="14" rx="2" fill="#162030" stroke="#1a2a40" stroke-width="0.5"/>
+          <rect x="72"  y="59" width="6" height="14" rx="2" fill="#162030" stroke="#1a2a40" stroke-width="0.5"/>
+
+          <!-- Module 2 — connecting node -->
+          <rect x="84" y="73" width="12" height="10" rx="2" fill="#121e2e" stroke="#1a2a40" stroke-width="0.5"/>
+          <rect x="104" y="73" width="12" height="10" rx="2" fill="#121e2e" stroke="#1a2a40" stroke-width="0.5"/>
+
+          <!-- ── COMMUNICATION DISH — large parabolic ── -->
+          <!-- Dish mount arm -->
+          <rect x="94" y="47" width="2" height="12" fill="#0e1a28"/>
+          <!-- Dish parabola — accurate concave shape -->
+          <path d="M82 47 Q95 38 108 47" fill="#0d1e30" stroke="#1a3050" stroke-width="0.75"/>
+          <path d="M82 47 Q95 42 108 47" fill="none" stroke="#1e3858" stroke-width="0.4" opacity="0.6"/>
+          <!-- Dish feed horn -->
+          <line x1="95" y1="47" x2="95" y2="40" stroke="#0e1a28" stroke-width="0.75"/>
+          <circle cx="95" cy="39" r="1.5" fill="#1a2a40" stroke="#1e3858" stroke-width="0.4"/>
+          <!-- Dish rim highlight -->
+          <path d="M82 47 Q95 38 108 47" fill="none" stroke="#243858" stroke-width="0.4" opacity="0.5"/>
+
+          <!-- ── SECONDARY DISH — smaller, offset ── -->
+          <rect x="62" y="68" width="1.5" height="8" fill="#0e1a28"/>
+          <path d="M57 68 Q63 63 69 68" fill="#0d1e30" stroke="#1a3050" stroke-width="0.5"/>
+          <line x1="63" y1="63" x2="63" y2="60" stroke="#0e1a28" stroke-width="0.5"/>
+          <circle cx="63" cy="59" r="1" fill="#1a2a40"/>
+
+          <!-- ── RADIATOR PANELS — below truss ── -->
+          <rect x="86"  y="73" width="28" height="12" fill="#0d1e30" stroke="#1a2840" stroke-width="0.4" rx="1"/>
+          <line x1="90"  y1="73" x2="90"  y2="85" stroke="#0a1828" stroke-width="0.4"/>
+          <line x1="98"  y1="73" x2="98"  y2="85" stroke="#0a1828" stroke-width="0.4"/>
+          <line x1="106" y1="73" x2="106" y2="85" stroke="#0a1828" stroke-width="0.4"/>
+
+          <!-- ── STATUS LIGHTS ── -->
+          <!-- Green operational -->
+          <circle cx="80"  cy="66" r="1.2" fill="#1a4020" opacity="0.8"/>
+          <!-- Red alert — the distress signal -->
+          <circle cx="120" cy="66" r="1.5" fill="#601010" opacity="0.9"/>
+          <!-- Blue comms -->
+          <circle cx="100" cy="74" r="1.2" fill="#102040" opacity="0.8"/>
+
+          <!-- ── SIGNAL TRANSMISSION ── -->
+          <!-- Radio waves emanating from main dish -->
+          <path d="M95 38 Q80 28 70 20" fill="none" stroke="#1a3050" stroke-width="0.6" opacity="0.5" stroke-dasharray="2 3"/>
+          <path d="M95 38 Q75 24 60 14" fill="none" stroke="#1a3050" stroke-width="0.4" opacity="0.3" stroke-dasharray="2 4"/>
+          <path d="M95 38 Q110 28 122 20" fill="none" stroke="#1a3050" stroke-width="0.6" opacity="0.4" stroke-dasharray="2 3"/>
+
+          <!-- Subtle sunlight reflection on panels -->
+          <rect x="4"   y="45" width="2" height="39" fill="#2a4870" opacity="0.15" rx="1"/>
+          <rect x="194" y="45" width="2" height="39" fill="#2a4870" opacity="0.15" rx="1"/>
+
+          <!-- Label -->
+          <text x="100" y="130" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" letter-spacing="3" fill="#0d1e30" opacity="0.85">RELAY · SECTOR 7</text>
         </svg>
       </div>
       <div class="show-badge badge-soon">Coming Soon</div>
@@ -488,10 +666,11 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 </div>
 
 <script>
-// Radio signal wave — always aligns M to K regardless of platform/font/viewport
+// Radio signal wave — canvas measurement for precise MURK width
 (function(){
   const murkEl = document.querySelector('.hero-murk');
   const barsEl = document.getElementById('heroBars');
+  const ruleEl = document.getElementById('heroRule');
   if(!murkEl || !barsEl) return;
 
   function radioHeight(i, total){
@@ -506,15 +685,26 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
     return Math.max(0.25, Math.min(0.95, Math.sin(t * Math.PI) * 0.55 + Math.sin(t * Math.PI * 6) * 0.15 + 0.35));
   }
 
+  function getMurkWidth(){
+    const style = window.getComputedStyle(murkEl);
+    const fontSize = parseFloat(style.fontSize);
+    const ls = parseFloat(style.letterSpacing) || 8;
+    const cvs = document.createElement('canvas');
+    const ctx = cvs.getContext('2d');
+    ctx.font = '900 ' + fontSize + 'px Orbitron, Arial Black, Arial';
+    // MURK = 4 chars, letter-spacing applies between chars only (3 gaps), not after K
+    const W = Math.round(ctx.measureText('MURK').width + ls * 3);
+    return W;
+  }
+
   function build(){
-    // Use getBoundingClientRect for pixel-accurate width after font render
-    const rect = murkEl.getBoundingClientRect();
-    const W = Math.round(rect.width);
+    const W = getMurkWidth();
     if(!W || W < 10){ setTimeout(build, 50); return; }
 
     barsEl.style.width = W + 'px';
     barsEl.style.maxWidth = W + 'px';
     barsEl.style.minWidth = W + 'px';
+    if(ruleEl){ ruleEl.style.width = W + 'px'; }
 
     const barW = 2, gap = 1, unit = barW + gap;
     const count = Math.floor(W / unit);
@@ -534,24 +724,27 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
     }
   }
 
-  // Build after fonts confirmed loaded
-  if(document.fonts && document.fonts.ready){
-    document.fonts.ready.then(function(){
-      // Double RAF ensures layout is complete after font swap
+  function init(){
+    requestAnimationFrame(function(){
       requestAnimationFrame(function(){
-        requestAnimationFrame(build);
+        build();
+        if(window.ResizeObserver){
+          new ResizeObserver(function(){ build(); }).observe(murkEl);
+        } else {
+          window.addEventListener('resize', function(){
+            clearTimeout(window._wt);
+            window._wt = setTimeout(build, 150);
+          });
+        }
       });
     });
-  } else {
-    setTimeout(build, 500);
   }
 
-  // Rebuild on resize so it always matches MURK width
-  var resizeTimer;
-  window.addEventListener('resize', function(){
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(build, 150);
-  });
+  if(document.fonts && document.fonts.ready){
+    document.fonts.ready.then(init);
+  } else {
+    setTimeout(init, 600);
+  }
 })();
 </script>
 </body>
