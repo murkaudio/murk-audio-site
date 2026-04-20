@@ -145,7 +145,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica Neue',Arial,sans-serif;font-weight:300;width:100%;overflow-x:hidden;}
 .site{width:100%;overflow-x:hidden;}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:0.5px solid rgba(64,128,192,0.15);background:rgba(5,5,5,0.97);position:sticky;top:0;z-index:100;}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:0.5px solid rgba(64,128,192,0.15);background:rgba(5,5,5,0.97);position:fixed;top:0;left:0;right:0;z-index:1000;}
 .nav-logo{display:flex;flex-direction:column;align-items:flex-start;}
 .nav-the{font-family:'Syncopate',sans-serif,'Arial',sans-serif;font-size:6px;letter-spacing:7px;color:#80b0d8;}
 .nav-murk{font-family:'Orbitron',sans-serif,'Arial',sans-serif;font-size:18px;font-weight:900;letter-spacing:3px;color:transparent;background:linear-gradient(180deg,#ffffff 0%,#aad4f8 35%,#6aaee8 70%,#4488cc 100%);-webkit-background-clip:text;background-clip:text;line-height:1;}
@@ -174,7 +174,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
   flex-direction:column;
   gap:0;
 }
-.nav-follow:hover .nav-dropdown{display:flex;}
+.nav-follow:hover .nav-dropdown{}
 .nav-dropdown a{
   font-family:'Share Tech Mono',monospace,'Courier New',monospace;
   font-size:8px;letter-spacing:3px;color:rgba(140,190,230,0.5);
@@ -186,7 +186,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 }
 .nav-dropdown a:last-child{border-bottom:none;}
 .nav-dropdown a:hover{color:#aad4f8;background:rgba(30,60,100,0.2);}
-.hero{min-height:520px;display:flex;align-items:flex-end;padding:80px 24px 56px;position:relative;border-bottom:0.5px solid rgba(64,128,192,0.1);overflow:hidden;}
+.hero{min-height:520px;display:flex;align-items:flex-end;padding:140px 24px 56px;position:relative;border-bottom:0.5px solid rgba(64,128,192,0.1);overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 72% 38%,rgba(25,55,115,0.22) 0%,transparent 70%),radial-gradient(ellipse 35% 45% at 18% 75%,rgba(15,35,85,0.14) 0%,transparent 60%);}
 .hero-scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(40,80,140,0.025) 3px,rgba(40,80,140,0.025) 4px);pointer-events:none;}
 .hero-content{position:relative;z-index:2;max-width:600px;width:100%;}
