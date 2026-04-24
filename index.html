@@ -150,8 +150,9 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .nav-the{font-family:'Syncopate',sans-serif,'Arial',sans-serif;font-size:6px;letter-spacing:7px;color:#80b0d8;}
 .nav-murk{font-family:'Orbitron',sans-serif,'Arial',sans-serif;font-size:18px;font-weight:900;letter-spacing:3px;color:transparent;background:linear-gradient(180deg,#ffffff 0%,#aad4f8 35%,#6aaee8 70%,#4488cc 100%);-webkit-background-clip:text;background-clip:text;line-height:1;}
 .nav-links{display:none;}
-.nav-links a{color:rgba(160,200,240,0.35);text-decoration:none;font-size:9px;letter-spacing:3px;text-transform:uppercase;font-family:'Share Tech Mono',monospace,'Courier New',monospace;}
-.nav-cta{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:8px;letter-spacing:3px;color:#80b0d8;border:0.5px solid rgba(64,128,192,0.3);padding:6px 12px;text-transform:uppercase;white-space:nowrap;}
+.nav-links a{color:rgba(160,200,240,0.85);text-decoration:none;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-family:'Share Tech Mono',monospace,'Courier New',monospace;}
+.nav-links a:hover{color:#ffffff;}
+.nav-cta{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:9px;letter-spacing:3px;color:#aad4f8;border:1px solid rgba(64,128,192,0.6);padding:6px 14px;text-transform:uppercase;white-space:nowrap;}
 .nav-right{display:flex;align-items:center;gap:12px;flex-shrink:0;}
 @media(min-width:640px){.nav-links{display:flex;gap:20px;list-style:none;align-items:center;}}
 
@@ -222,9 +223,10 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .show-desc{font-size:11px;line-height:1.65;color:rgba(180,210,235,0.65);}
 .show-meta{display:flex;gap:12px;margin-top:10px;padding-top:10px;border-top:0.5px solid rgba(30,60,100,0.14);}
 .show-meta-item{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:2px;color:#4a6880;text-transform:uppercase;}
-.show-badge{position:absolute;top:10px;right:10px;font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:3px;padding:4px 8px;text-transform:uppercase;}
-.badge-dev{color:#5a88b0;border:0.5px solid rgba(40,80,140,0.3);background:rgba(8,18,38,0.85);}
-.badge-soon{color:#4a7090;border:0.5px solid rgba(20,40,70,0.2);background:rgba(5,10,20,0.85);}
+.show-badge{position:absolute;top:10px;right:10px;font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:8px;letter-spacing:3px;padding:5px 10px;text-transform:uppercase;}
+.badge-dev{color:#aad4f8;border:1px solid rgba(64,128,192,0.6);background:rgba(8,18,38,0.92);}
+.badge-soon{color:#88b8d8;border:1px solid rgba(40,80,120,0.5);background:rgba(5,10,20,0.92);}
+.badge-prod{color:#7fffb0;border:1px solid rgba(0,200,100,0.6);background:rgba(0,20,10,0.92);}
 .about-strip{padding:44px 24px;display:grid;grid-template-columns:1fr;gap:36px;align-items:start;border-bottom:0.5px solid rgba(64,128,192,0.07);}
 @media(min-width:720px){.about-strip{grid-template-columns:1fr 1fr;gap:52px;}}
 .about-pre{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:11px;letter-spacing:5px;color:#88bbee;margin-bottom:14px;text-transform:uppercase;}
@@ -420,15 +422,15 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
           <text x="100" y="133" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="8" letter-spacing="3" fill="#1a1808" opacity="0.8">PDX · 1951</text>
         </svg>
       </div>
-      <div class="show-badge badge-soon">In Development</div>
+      <div class="show-badge badge-prod">In Production</div>
       <div class="show-body">
-        <div class="show-tag">Development · Pilot Written</div>
+        <div class="show-tag">Production · Limited Series</div>
         <div class="show-title">Dead Signal</div>
         <div class="show-genre">Crime Noir</div>
         <div class="show-desc">Portland. 1951. A detective who hears things that aren't there — or are they?</div>
         <div class="show-meta">
-          <div class="show-meta-item">6 Episodes</div>
-          <div class="show-meta-item">~40 min</div>
+          <div class="show-meta-item">3 Episodes</div>
+          <div class="show-meta-item">~25 min</div>
         </div>
       </div>
     </div>
