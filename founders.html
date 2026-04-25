@@ -363,9 +363,13 @@
     .closing-sig {
       font-family: 'Courier Prime', monospace;
       font-size: 0.75rem;
-      letter-spacing: 0.25em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--fog);
+      max-width: 100%;
+      word-break: break-word;
+      white-space: normal;
+      padding: 0 1rem;
     }
 
     /* FOOTER — exact match from murk.audio */
@@ -480,7 +484,7 @@
     <div class="closing">
       <p class="closing-quote">"Your place in the history of this studio is locked from the day you join."</p>
       <p class="closing-thank">Thank You</p>
-      <p class="closing-sig">— James Williams, Founder · The Murk Audio LLC · Portland, OR</p>
+      <p class="closing-sig"><span style="white-space:nowrap;">— James Williams, Founder</span> · <span style="white-space:nowrap;">The Murk Audio LLC</span> · <span style="white-space:nowrap;">Portland, OR</span></p>
     </div>
 
   </main>
