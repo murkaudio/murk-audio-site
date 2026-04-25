@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Founders — The Murk Audio LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Courier+Prime:wght@400;700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Syncopate:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --black: #080808;
+      --deep: #0d0d0d;
+      --surface: #111111;
+      --border: #1e1e1e;
+      --muted: #2a2a2a;
+      --fog: #444444;
+      --text-dim: #888888;
+      --text: #c8c4bc;
+      --text-bright: #e8e4dc;
+      --gold: #b8975a;
+      --gold-dim: #7a6238;
+      --silver: #8a9aaa;
+      --bronze: #8a7060;
+      --signal: #4a6a5a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--black);
+      color: var(--text);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Noise texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    /* NAV — exact match from murk.audio */
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:0.5px solid rgba(64,128,192,0.15);background:rgba(5,5,5,0.97);position:fixed;top:0;left:0;right:0;z-index:1000;}
+    .nav-logo{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;}
+    .nav-the{font-family:'Syncopate',sans-serif;font-size:6px;letter-spacing:7px;color:#80b0d8;}
+    .nav-murk{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:900;letter-spacing:3px;color:transparent;background:linear-gradient(180deg,#ffffff 0%,#aad4f8 35%,#6aaee8 70%,#4488cc 100%);-webkit-background-clip:text;background-clip:text;line-height:1;}
+    .nav-links{display:none;}
+    .nav-links a{color:rgba(160,200,240,0.85);text-decoration:none;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-family:'Share Tech Mono',monospace,'Courier New',monospace;}
+    .nav-links a:hover{color:#ffffff;}
+    .nav-right{display:flex;align-items:center;gap:12px;flex-shrink:0;}
+    @media(min-width:640px){.nav-links{display:flex;gap:20px;list-style:none;align-items:center;}}
+    @media(min-width:960px){.nav{padding:16px 48px;}}
+    .nav-follow{position:relative;}
+    .nav-follow-btn{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:10px;letter-spacing:3px;color:rgba(160,200,240,0.85);text-transform:uppercase;cursor:pointer;background:none;border:none;padding:0;white-space:nowrap;}
+    .nav-follow-btn:hover{color:#aad4f8;}
+    .nav-dropdown{display:none;position:absolute;top:calc(100% + 12px);right:0;background:rgba(5,8,18,0.98);border:1px solid rgba(64,128,192,0.5);min-width:200px;z-index:200;flex-direction:column;gap:0;box-shadow:0 4px 24px rgba(0,0,0,0.6);}
+    .nav-dropdown a{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:10px;letter-spacing:3px;color:rgba(170,212,248,0.9);text-decoration:none;text-transform:uppercase;padding:14px 20px;border-bottom:1px solid rgba(64,128,192,0.2);white-space:nowrap;transition:color 0.15s,background 0.15s;}
+    .nav-dropdown a:last-child{border-bottom:none;}
+    .nav-dropdown a:hover{color:#ffffff;background:rgba(40,80,140,0.35);}
+
+    /* MAIN */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 8rem 2rem 6rem;
+    }
+
+    /* HEADER */
+    .page-header {
+      text-align: center;
+      margin-bottom: 5rem;
+      animation: fadeIn 1s ease both;
+    }
+
+    .page-eyebrow {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      margin-bottom: 1.5rem;
+    }
+
+    .page-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 300;
+      color: var(--text-bright);
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      margin-bottom: 2rem;
+    }
+
+    .page-title-the {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1em;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+
+    .page-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .page-rule {
+      width: 60px;
+      height: 1px;
+      background: var(--gold-dim);
+      margin: 0 auto 2rem;
+    }
+
+    .page-intro {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text-dim);
+      line-height: 1.8;
+      max-width: 580px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .page-intro-plain {
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.8;
+      max-width: 540px;
+      margin: 0 auto;
+      letter-spacing: 0.02em;
+    }
+
+    /* FOUNDING WINDOW BANNER */
+    .founding-window {
+      border: 1px solid var(--gold-dim);
+      padding: 1.25rem 2rem;
+      text-align: center;
+      margin-bottom: 4rem;
+      position: relative;
+      animation: fadeIn 1s 0.3s ease both;
+      opacity: 0;
+    }
+
+    .founding-window::before {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      border: 1px solid rgba(184,151,90,0.15);
+      pointer-events: none;
+    }
+
+    .founding-window-label {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .founding-window-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--text-dim);
+      font-style: italic;
+    }
+
+    .founding-window-cta {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold-dim);
+      padding-bottom: 2px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+    .founding-window-cta:hover { color: var(--text-bright); border-color: var(--text-bright); }
+
+    /* TIER SECTIONS */
+    .tier-section {
+      margin-bottom: 4rem;
+      animation: fadeIn 1s ease both;
+      opacity: 0;
+    }
+    .tier-section:nth-child(1) { animation-delay: 0.4s; }
+    .tier-section:nth-child(2) { animation-delay: 0.6s; }
+    .tier-section:nth-child(3) { animation-delay: 0.8s; }
+
+    .tier-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tier-badge {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      letter-spacing: 0.1em;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    .tier-badge.the-murk {
+      font-size: 1.6rem;
+      color: var(--gold);
+      border-color: var(--gold-dim);
+      background: rgba(184,151,90,0.05);
+    }
+    .tier-badge.the-deep {
+      font-size: 1.25rem;
+      color: var(--silver);
+      border-color: rgba(138,154,170,0.4);
+      background: rgba(138,154,170,0.04);
+    }
+    .tier-badge.the-shallows {
+      font-size: 1rem;
+      color: var(--bronze);
+      border-color: rgba(138,112,96,0.4);
+      background: rgba(138,112,96,0.04);
+    }
+
+    /* PATRON GRID */
+    .patron-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .patron-card {
+      padding: 0.9rem 1.1rem;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      position: relative;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .patron-card:hover {
+      border-color: var(--muted);
+      background: #151515;
+    }
+
+    .patron-card.associate-producer {
+      border-color: var(--gold-dim);
+      background: rgba(184,151,90,0.03);
+    }
+
+    .patron-card.associate-producer::before {
+      content: 'Associate Producer';
+      position: absolute;
+      top: -1px;
+      right: 0.75rem;
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.45rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: var(--black);
+      padding: 0 0.4rem;
+      transform: translateY(-50%);
+    }
+
+    .patron-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-bright);
+      letter-spacing: 0.03em;
+      margin-bottom: 0.2rem;
+    }
+
+    .patron-date {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.55rem;
+      letter-spacing: 0.1em;
+      color: var(--fog);
+    }
+
+    /* EMPTY STATE */
+    .empty-state {
+      padding: 2rem;
+      border: 1px dashed var(--border);
+      text-align: center;
+    }
+
+    .empty-state-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--fog);
+    }
+
+    .empty-state-sub {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    /* DIVIDER */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 4rem 0;
+    }
+
+    /* CLOSING */
+    .closing {
+      text-align: center;
+      padding: 3rem 0;
+      animation: fadeIn 1s 1s ease both;
+      opacity: 0;
+    }
+
+    .closing-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.7;
+      max-width: 480px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .closing-thank {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: #b8975a;
+      margin: 0 auto 2.5rem;
+    }
+
+    .closing-sig {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--fog);
+    }
+
+    /* FOOTER — exact match from murk.audio */
+    .footer{padding:28px 24px;display:flex;flex-direction:column;gap:16px;border-top:0.5px solid rgba(20,40,70,0.15);}
+    @media(min-width:640px){.footer{flex-direction:row;justify-content:space-between;align-items:center;gap:20px;}}
+    @media(min-width:960px){.footer{padding-left:48px;padding-right:48px;}}
+    .footer-brand{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:5px;color:#3a5870;text-transform:uppercase;}
+    .footer-links{display:flex;gap:16px;flex-wrap:wrap;list-style:none;}
+    .footer-links a{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:3px;color:#3a5870;text-decoration:none;text-transform:uppercase;}
+    .footer-copy{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:3px;color:#2a4860;}
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-links { gap: 1.25rem; }
+      main { padding: 6rem 1.25rem 4rem; }
+      .patron-grid { grid-template-columns: 1fr 1fr; }
+      footer { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="https://murk.audio" class="nav-logo">
+      <span class="nav-the">THE</span>
+      <span class="nav-murk">MURK</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://murk.audio/#shows">Shows</a></li>
+      <li><a href="https://murk.audio/#about">About</a></li>
+      <li><a href="mailto:hello@murk.audio">Press</a></li>
+      <li><a href="https://patreon.com/TheMurk" target="_blank" rel="noopener">Patreon</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-follow">
+        <button class="nav-follow-btn">Follow Us &#9662;</button>
+        <div class="nav-dropdown">
+          <a href="https://instagram.com/murkaudio" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://tiktok.com/@murkaudio" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://x.com/murkaudio" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="https://bsky.app/profile/murkaudio.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          <a href="https://reddit.com/u/murkaudio" target="_blank" rel="noopener">Reddit</a>
+          <a href="https://patreon.com/TheMurk" target="_blank" rel="noopener">Patreon</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <p class="page-eyebrow">murk.audio / founders</p>
+      <h1 class="page-title"><span class="page-title-the">The</span> <em>Founders</em></h1>
+      <div class="page-rule"></div>
+      <p class="page-intro">These are the people who were here before it was finished.</p>
+      <p class="page-intro-plain">Every name on this page is permanent. The founding member window closes when Dead Signal Episode 1 drops publicly. After that, this record is sealed.</p>
+    </header>
+
+    <div class="founding-window">
+      <p class="founding-window-label">Founding Member Window</p>
+      <p class="founding-window-text">Open — closes on Dead Signal Episode 1 public release</p>
+      <a class="founding-window-cta" href="https://patreon.com/TheMurk" target="_blank" rel="noopener">Join on Patreon →</a>
+    </div>
+
+    <!-- TIER 1: THE MURK -->
+    <section class="tier-section">
+      <div class="tier-header">
+        <span class="tier-badge the-murk">The Murk</span>
+      </div>
+      <div class="patron-grid">
+        <div class="empty-state">
+          <p class="empty-state-text">Your name belongs here.</p>
+          <p class="empty-state-sub">Associate Producer · First position</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIER 2: THE DEEP -->
+    <section class="tier-section">
+      <div class="tier-header">
+        <span class="tier-badge the-deep">The Deep</span>
+      </div>
+      <div class="patron-grid">
+        <div class="empty-state">
+          <p class="empty-state-text">No one has gone this deep yet.</p>
+          <p class="empty-state-sub">Be the first</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIER 3: THE SHALLOWS -->
+    <section class="tier-section">
+      <div class="tier-header">
+        <span class="tier-badge the-shallows">The Shallows</span>
+      </div>
+      <div class="patron-grid">
+        <div class="empty-state">
+          <p class="empty-state-text">The water is waiting.</p>
+          <p class="empty-state-sub">Step in</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <div class="closing">
+      <p class="closing-quote">"Your place in the history of this studio is locked from the day you join."</p>
+      <p class="closing-thank">Thank You</p>
+      <p class="closing-sig">— James Williams, Founder · The Murk Audio LLC · Portland, OR</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">The Murk Audio LLC &nbsp;·&nbsp; Portland, OR</div>
+    <ul class="footer-links">
+      <li><a href="mailto:hello@murk.audio">Press</a></li>
+      <li><a href="mailto:hello@murk.audio">Contact</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 The Murk Audio LLC</div>
+  </footer>
+
+<script>
+(function(){
+  const btn = document.querySelector('.nav-follow-btn');
+  const dd  = document.querySelector('.nav-dropdown');
+  if(!btn || !dd) return;
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    const open = dd.style.display === 'flex';
+    dd.style.display = open ? 'none' : 'flex';
+  });
+  document.addEventListener('click', function(){
+    if(dd) dd.style.display = 'none';
+  });
+})();
+</script>
+</body>
+</html>
