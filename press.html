@@ -111,6 +111,21 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .contact-val a{color:#5599dd;text-decoration:none;letter-spacing:1px;}
 .contact-val a:hover{color:#aad4f8;}
 
+/* Hamburger */
+.nav-hamburger{display:flex;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:4px;flex-shrink:0;}
+.nav-hamburger span{display:block;width:20px;height:1.5px;background:rgba(160,200,240,0.85);transition:all 0.25s ease;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+@media(min-width:640px){.nav-hamburger{display:none;}}
+/* Mobile drawer */
+.nav-drawer{display:none;position:fixed;top:49px;left:0;right:0;background:rgba(5,5,5,0.98);border-bottom:0.5px solid rgba(64,128,192,0.15);z-index:999;flex-direction:column;padding:8px 0;}
+.nav-drawer.open{display:flex;}
+.nav-drawer a{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:10px;letter-spacing:3px;color:rgba(160,200,240,0.85);text-decoration:none;text-transform:uppercase;padding:14px 24px;border-bottom:1px solid rgba(64,128,192,0.08);}
+.nav-drawer a:last-child{border-bottom:none;}
+.nav-drawer a:hover{color:#ffffff;background:rgba(40,80,140,0.2);}
+@media(min-width:640px){.nav-drawer{display:none!important;}}
+
 /* ── FOOTER (exact match) ── */
 .footer{padding:28px 24px;display:flex;flex-direction:column;gap:16px;border-top:0.5px solid rgba(20,40,70,0.15);}
 @media(min-width:640px){.footer{flex-direction:row;justify-content:space-between;align-items:center;gap:20px;}}
@@ -136,6 +151,9 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
     <li><a href="https://patreon.com/TheMurk" target="_blank">Patreon</a></li>
   </ul>
   <div class="nav-right">
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
     <div class="nav-follow">
       <button class="nav-follow-btn">Follow Us &#9662;</button>
       <div class="nav-dropdown">
@@ -149,6 +167,15 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
     </div>
   </div>
 </nav>
+
+<!-- Mobile nav drawer -->
+<div class="nav-drawer" id="navDrawer">
+  <a href="https://murk.audio/#shows">Shows</a>
+  <a href="https://murk.audio/#about">About</a>
+  <a href="/founders">Founders</a>
+  <a href="/press">Press</a>
+  <a href="https://patreon.com/TheMurk" target="_blank">Patreon</a>
+</div>
 
 <div class="page">
 
@@ -317,6 +344,28 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
   });
   document.addEventListener('click', function(){
     if(dd) dd.style.display = 'none';
+  });
+})();
+
+(function(){
+  const ham = document.getElementById('navHamburger');
+  const drawer = document.getElementById('navDrawer');
+  if(!ham || !drawer) return;
+  ham.addEventListener('click', function(e){
+    e.stopPropagation();
+    const open = drawer.classList.contains('open');
+    drawer.classList.toggle('open', !open);
+    ham.classList.toggle('open', !open);
+  });
+  drawer.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      drawer.classList.remove('open');
+      ham.classList.remove('open');
+    });
+  });
+  document.addEventListener('click', function(){
+    drawer.classList.remove('open');
+    ham.classList.remove('open');
   });
 })();
 </script>
