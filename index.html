@@ -211,15 +211,15 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .sec-label::after{content:'';flex:1;height:0.5px;background:linear-gradient(90deg,rgba(100,160,220,0.3),transparent);}
 .shows-grid{display:grid;grid-template-columns:1fr;gap:3px;}
 @media(min-width:640px){.shows-grid{grid-template-columns:1fr 1fr;}}
-@media(min-width:960px){.shows-grid{grid-template-columns:1.6fr 1fr 1fr;}}
+@media(min-width:960px){.shows-grid{grid-template-columns:1fr 1fr 1fr;}}
 .show-card{background:#060c14;border:0.5px solid rgba(30,60,100,0.18);overflow:hidden;position:relative;}
 .show-card.featured{border-color:rgba(64,128,192,0.25);background:#070d1a;}
 .show-poster{width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;}
 .show-body{padding:18px 16px;}
 .show-tag{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:4px;color:#4a7090;margin-bottom:8px;text-transform:uppercase;}
-.show-title{font-family:'Orbitron',sans-serif,'Arial',sans-serif;font-size:clamp(14px,3vw,17px);font-weight:900;letter-spacing:2px;color:transparent;background:linear-gradient(180deg,#eef6ff 0%,#aad4f8 40%,#6aaee8 100%);-webkit-background-clip:text;background-clip:text;margin-bottom:5px;line-height:1.1;}
-.show-card.featured .show-title{font-size:clamp(16px,3.5vw,20px);background:linear-gradient(180deg,#ffffff 0%,#88bbee 40%,#2a5888 100%);-webkit-background-clip:text;background-clip:text;}
-.show-genre{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:8px;letter-spacing:2px;color:#4a7090;text-transform:uppercase;margin-bottom:10px;}
+.show-title{font-family:'Orbitron',sans-serif,'Arial',sans-serif;font-size:clamp(14px,3vw,17px);font-weight:900;letter-spacing:2px;margin-bottom:5px;line-height:1.1;}
+.show-card.featured .show-title{font-size:clamp(16px,3.5vw,20px);}
+.show-genre{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
 .show-desc{font-size:11px;line-height:1.65;color:rgba(180,210,235,0.65);}
 .show-meta{display:flex;gap:12px;margin-top:10px;padding-top:10px;border-top:0.5px solid rgba(30,60,100,0.14);}
 .show-meta-item{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:2px;color:#4a6880;text-transform:uppercase;}
@@ -227,6 +227,24 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .badge-dev{color:#aad4f8;border:1px solid rgba(64,128,192,0.6);background:rgba(8,18,38,0.92);}
 .badge-soon{color:#88b8d8;border:1px solid rgba(40,80,120,0.5);background:rgba(5,10,20,0.92);}
 .badge-prod{color:#7fffb0;border:1px solid rgba(0,200,100,0.6);background:rgba(0,20,10,0.92);}
+/* Per-card colors — horror */
+.show-card.horror{border-color:rgba(80,40,140,0.3);background:#08060e;}
+.show-card.horror .show-title{color:#a868d8;}
+.show-card.horror .show-genre{color:rgba(140,80,180,0.8);}
+.show-card.horror .show-tag{color:rgba(140,80,180,0.6);}
+.show-card.horror .show-meta{border-top-color:rgba(80,40,140,0.14);}
+/* Per-card colors — noir */
+.show-card.noir{border-color:rgba(160,130,60,0.25);background:#080600;}
+.show-card.noir .show-title{color:#c8a848;}
+.show-card.noir .show-genre{color:rgba(180,150,80,0.8);}
+.show-card.noir .show-tag{color:rgba(180,150,80,0.6);}
+.show-card.noir .show-meta{border-top-color:rgba(160,130,60,0.14);}
+/* Per-card colors — scifi */
+.show-card.scifi{border-color:rgba(40,120,180,0.25);background:#06080e;}
+.show-card.scifi .show-title{color:#68b8e8;}
+.show-card.scifi .show-genre{color:rgba(80,160,220,0.8);}
+.show-card.scifi .show-tag{color:rgba(80,160,220,0.6);}
+.show-card.scifi .show-meta{border-top-color:rgba(40,120,180,0.14);}
 .about-strip{padding:44px 24px;display:grid;grid-template-columns:1fr;gap:36px;align-items:start;border-bottom:0.5px solid rgba(64,128,192,0.07);}
 @media(min-width:720px){.about-strip{grid-template-columns:1fr 1fr;gap:52px;}}
 .about-pre{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:11px;letter-spacing:5px;color:#88bbee;margin-bottom:14px;text-transform:uppercase;}
@@ -272,7 +290,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
     <li><a href="#shows">Shows</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="/founders">Founders</a></li>
-    <li><a href="mailto:hello@murk.audio">Press</a></li>
+    <li><a href="/press">Press</a></li>
     <li><a href="https://patreon.com/TheMurk" target="_blank">Patreon</a></li>
   </ul>
   <div class="nav-right">
@@ -314,7 +332,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
   <div class="sec-label">Current &amp; Upcoming Shows</div>
   <div class="shows-grid">
 
-    <div class="show-card featured">
+    <div class="show-card featured horror">
       <div class="show-poster">
         <svg width="100%" viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -398,7 +416,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
       </div>
     </div>
 
-    <div class="show-card">
+    <div class="show-card noir">
       <div class="show-poster">
         <svg width="100%" viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -437,7 +455,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
       </div>
     </div>
 
-    <div class="show-card">
+    <div class="show-card scifi">
       <div class="show-poster">
         <svg width="100%" viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
           <defs>
