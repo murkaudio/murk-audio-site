@@ -138,48 +138,7 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 </head>
 <body>
 
-<nav class="nav">
-  <a href="https://murk.audio" class="nav-logo">
-    <span class="nav-the">THE</span>
-    <span class="nav-murk">MURK</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="https://murk.audio/#shows">Shows</a></li>
-    <li><a href="https://murk.audio/#about">About</a></li>
-    <li><a href="/founders">Founders</a></li>
-    <li><a href="/press">Press</a></li>
-    <li><a href="https://patreon.com/TheMurk" target="_blank">Patreon</a></li>
-  </ul>
-  <div class="nav-right">
-    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-follow">
-      <button class="nav-follow-btn">Follow Us &#9662;</button>
-      <div class="nav-dropdown">
-        <a href="https://instagram.com/murkaudio" target="_blank">Instagram</a>
-        <a href="https://tiktok.com/@murkaudio" target="_blank">TikTok</a>
-        <a href="https://x.com/murkaudio" target="_blank">X / Twitter</a>
-        <a href="https://bsky.app/profile/murkaudio.bsky.social" target="_blank">Bluesky</a>
-        <a href="https://reddit.com/u/murkaudio" target="_blank">Reddit</a>
-        <a href="https://linkedin.com/company/murkaudio" target="_blank">LinkedIn</a>
-        <a href="https://patreon.com/TheMurk" target="_blank">Patreon</a>
-        <a href="https://discord.gg/9RsXbKFsSt" target="_blank">Discord</a>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- Mobile nav drawer -->
-<div class="nav-drawer" id="navDrawer">
-  <a href="https://murk.audio/#shows">Shows</a>
-  <a href="https://murk.audio/#about">About</a>
-  <a href="/founders">Founders</a>
-  <a href="/press">Press</a>
-  <a href="https://patreon.com/TheMurk" target="_blank">Patreon</a>
-  <a href="https://linkedin.com/company/murkaudio" target="_blank">LinkedIn</a>
-  <a href="https://discord.gg/9RsXbKFsSt" target="_blank">Discord</a>
-</div>
+<div id="site-nav"></div>
 
 <div class="page">
 
@@ -327,52 +286,8 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 
 </div><!-- /page -->
 
-<footer class="footer">
-  <div class="footer-brand">The Murk Audio LLC &nbsp;·&nbsp; Portland, OR</div>
-  <ul class="footer-links">
-    <li><a href="mailto:hello@murk.audio">Press</a></li>
-    <li><a href="mailto:hello@murk.audio">Contact</a></li>
-    <li><a href="https://discord.gg/9RsXbKFsSt" target="_blank">Discord</a></li>
-  </ul>
-  <div class="footer-copy">© 2026 The Murk Audio LLC</div>
-</footer>
+<div id="site-footer"></div>
 
-<script>
-(function(){
-  const btn = document.querySelector('.nav-follow-btn');
-  const dd  = document.querySelector('.nav-dropdown');
-  if(!btn || !dd) return;
-  btn.addEventListener('click', function(e){
-    e.stopPropagation();
-    const open = dd.style.display === 'flex';
-    dd.style.display = open ? 'none' : 'flex';
-  });
-  document.addEventListener('click', function(){
-    if(dd) dd.style.display = 'none';
-  });
-})();
-
-(function(){
-  const ham = document.getElementById('navHamburger');
-  const drawer = document.getElementById('navDrawer');
-  if(!ham || !drawer) return;
-  ham.addEventListener('click', function(e){
-    e.stopPropagation();
-    const open = drawer.classList.contains('open');
-    drawer.classList.toggle('open', !open);
-    ham.classList.toggle('open', !open);
-  });
-  drawer.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      drawer.classList.remove('open');
-      ham.classList.remove('open');
-    });
-  });
-  document.addEventListener('click', function(){
-    drawer.classList.remove('open');
-    ham.classList.remove('open');
-  });
-})();
-</script>
+<script src="/components.js"></script>
 </body>
 </html>
