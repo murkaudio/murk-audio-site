@@ -67,40 +67,51 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .press-body h3{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:4px;color:#5a88b0;text-transform:uppercase;margin:28px 0 12px;}
 
 /* ── SHOW CARDS ── */
-.show-cards{display:grid;grid-template-columns:1fr;gap:20px;}
+.show-cards{display:grid;grid-template-columns:1fr;gap:3px;}
 @media(min-width:640px){.show-cards{grid-template-columns:1fr 1fr;}}
 @media(min-width:960px){.show-cards{grid-template-columns:1fr 1fr 1fr;}}
 
-.show-card{border:0.5px solid rgba(64,128,192,0.15);padding:28px 24px;background:rgba(10,18,35,0.4);position:relative;overflow:hidden;}
-.show-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;}
-.show-card.noir::before{background:linear-gradient(90deg,transparent,rgba(160,130,60,0.6),transparent);}
-.show-card.horror::before{background:linear-gradient(90deg,transparent,rgba(80,40,140,0.6),transparent);}
-.show-card.scifi::before{background:linear-gradient(90deg,transparent,rgba(40,120,180,0.6),transparent);}
+.show-card{background:#060c14;border:0.5px solid rgba(30,60,100,0.18);overflow:hidden;position:relative;display:flex;flex-direction:column;}
 
-.show-card{border:0.5px solid rgba(64,128,192,0.15);padding:28px 24px;background:rgba(10,18,35,0.4);position:relative;overflow:hidden;display:flex;flex-direction:column;}
-.show-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;}
-.show-card.noir::before{background:linear-gradient(90deg,transparent,rgba(160,130,60,0.6),transparent);}
-.show-card.horror::before{background:linear-gradient(90deg,transparent,rgba(80,40,140,0.6),transparent);}
-.show-card.scifi::before{background:linear-gradient(90deg,transparent,rgba(40,120,180,0.6),transparent);}
-
-.show-genre{font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:4px;text-transform:uppercase;margin-bottom:12px;}
-.show-card.noir .show-genre{color:rgba(180,150,80,0.8);}
-.show-card.horror .show-genre{color:rgba(140,80,180,0.8);}
-.show-card.scifi .show-genre{color:rgba(80,160,220,0.8);}
-
-.show-title{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:900;letter-spacing:2px;margin-bottom:8px;line-height:1.2;}
-.show-card.noir .show-title{color:#c8a848;}
+/* Per-card colors — horror */
+.show-card.horror{border-color:rgba(80,40,140,0.3);background:#08060e;}
 .show-card.horror .show-title{color:#a868d8;}
-.show-card.scifi .show-title{color:#68b8e8;}
+.show-card.horror .show-genre{color:rgba(140,80,180,0.8);}
+.show-card.horror .show-tag{color:rgba(140,80,180,0.6);}
+.show-card.horror .show-meta{border-top-color:rgba(80,40,140,0.14);}
 
-.show-logline{font-family:'Cormorant Garamond',serif;font-size:13px;font-style:italic;color:rgba(180,210,235,0.6);line-height:1.6;margin-bottom:16px;flex:1;}
-.show-meta{display:flex;flex-direction:column;gap:4px;margin-bottom:16px;}
-.show-meta-row{font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:2px;color:#3a5870;text-transform:uppercase;}
-.show-meta-row span{color:rgba(160,200,230,0.5);}
-.show-status{display:inline-block;font-family:'Share Tech Mono',monospace;font-size:7px;letter-spacing:3px;text-transform:uppercase;padding:4px 10px;border:1px solid;align-self:flex-start;margin-top:auto;}
-.show-card.noir .show-status{color:rgba(180,150,80,0.7);border-color:rgba(180,150,80,0.25);}
-.show-card.horror .show-status{color:rgba(140,80,180,0.7);border-color:rgba(140,80,180,0.25);}
-.show-card.scifi .show-status{color:rgba(80,160,220,0.7);border-color:rgba(80,160,220,0.25);}
+/* Per-card colors — noir */
+.show-card.noir{border-color:rgba(160,130,60,0.25);background:#080600;}
+.show-card.noir .show-title{color:#c8a848;}
+.show-card.noir .show-genre{color:rgba(180,150,80,0.8);}
+.show-card.noir .show-tag{color:rgba(180,150,80,0.6);}
+.show-card.noir .show-meta{border-top-color:rgba(160,130,60,0.14);}
+
+/* Per-card colors — scifi */
+.show-card.scifi{border-color:rgba(40,120,180,0.25);background:#06080e;}
+.show-card.scifi .show-title{color:#68b8e8;}
+.show-card.scifi .show-genre{color:rgba(80,160,220,0.8);}
+.show-card.scifi .show-tag{color:rgba(80,160,220,0.6);}
+.show-card.scifi .show-meta{border-top-color:rgba(40,120,180,0.14);}
+
+/* Show poster */
+.show-poster{width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;}
+.show-poster img{width:100%;height:100%;object-fit:cover;display:block;}
+
+/* Show badge — top right over image */
+.show-badge{position:absolute;top:10px;right:10px;font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:8px;letter-spacing:3px;padding:5px 10px;text-transform:uppercase;z-index:2;}
+.show-card.noir    .show-badge{color:#c8a848;border:1px solid rgba(200,168,72,0.6);background:rgba(8,6,0,0.92);}
+.show-card.horror  .show-badge{color:#a868d8;border:1px solid rgba(168,104,216,0.6);background:rgba(8,6,14,0.92);}
+.show-card.scifi   .show-badge{color:#68b8e8;border:1px solid rgba(104,184,232,0.6);background:rgba(6,8,14,0.92);}
+
+/* Show body */
+.show-body{padding:18px 16px;display:flex;flex-direction:column;flex:1;}
+.show-tag{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:4px;color:#4a7090;margin-bottom:8px;text-transform:uppercase;}
+.show-title{font-family:'Orbitron',sans-serif,'Arial',sans-serif;font-size:clamp(14px,3vw,17px);font-weight:900;letter-spacing:2px;margin-bottom:5px;line-height:1.1;}
+.show-genre{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.show-desc{font-size:11px;line-height:1.65;color:rgba(180,210,235,0.65);flex:1;}
+.show-meta{display:flex;gap:12px;margin-top:10px;padding-top:10px;border-top:0.5px solid rgba(30,60,100,0.14);}
+.show-meta-item{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:2px;color:#4a6880;text-transform:uppercase;}
 
 /* ── CONTACT BLOCK ── */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:860px;}
@@ -193,37 +204,59 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
     <div class="section-label">Productions</div>
     <div class="show-cards">
 
+      <!-- DEAD SIGNAL — NOIR / GOLD -->
       <div class="show-card noir">
-        <div class="show-genre">Crime Noir · Limited Series</div>
-        <div class="show-title">Dead Signal</div>
-        <div class="show-logline">A detective who hears things that aren't there — or are they?</div>
-        <div class="show-meta">
-          <div class="show-meta-row">Setting <span>Portland, Oregon — 1951</span></div>
-          <div class="show-meta-row">Episodes <span>3 · 20–25 min each</span></div>
-          <div class="show-meta-row">Audio <span>Binaural 3D Spatial</span></div>
+        <div class="show-poster">
+          <img src="/images/DEADSIGNAL_SHOWCARD_01_20260426.jpg" alt="Dead Signal"/>
         </div>
-        <div class="show-status">In Production</div>
+        <div class="show-badge">In Production</div>
+        <div class="show-body">
+          <div class="show-tag">Production · Limited Series</div>
+          <div class="show-title">Dead Signal</div>
+          <div class="show-genre">Crime Noir</div>
+          <div class="show-desc">Portland. 1951. A detective who hears things that aren't there — or are they?</div>
+          <div class="show-meta">
+            <div class="show-meta-item">3 Episodes</div>
+            <div class="show-meta-item">20–25 min</div>
+            <div class="show-meta-item">Binaural 3D</div>
+          </div>
+        </div>
       </div>
 
+      <!-- BLACKWOOD MANOR — HORROR / PURPLE -->
       <div class="show-card horror">
-        <div class="show-genre">Gothic Horror · Anthology</div>
-        <div class="show-title">Blackwood Manor</div>
-        <div class="show-logline">Something in the estate has been waiting. Eleven residents. One corridor. All changed.</div>
-        <div class="show-meta">
-          <div class="show-meta-row">Episodes <span>10 · 30–45 min each</span></div>
-          <div class="show-meta-row">Audio <span>Binaural 3D Spatial</span></div>
+        <div class="show-poster">
+          <img src="/images/BLACKWOODMANOR_SHOWCARD_01_20260426.jpg" alt="Blackwood Manor"/>
         </div>
-        <div class="show-status">In Development</div>
+        <div class="show-badge">In Development</div>
+        <div class="show-body">
+          <div class="show-tag">Season 01 · Flagship Series</div>
+          <div class="show-title">Blackwood Manor</div>
+          <div class="show-genre">Gothic Horror</div>
+          <div class="show-desc">Something in the estate has been waiting. Eleven residents. One corridor. All changed.</div>
+          <div class="show-meta">
+            <div class="show-meta-item">6 Episodes</div>
+            <div class="show-meta-item">30–45 min</div>
+            <div class="show-meta-item">Binaural 3D</div>
+          </div>
+        </div>
       </div>
 
+      <!-- SIGNAL LOST — SCI-FI / BLUE -->
       <div class="show-card scifi">
-        <div class="show-genre">Sci-Fi Thriller</div>
-        <div class="show-title">Signal Lost</div>
-        <div class="show-logline">A deep-space relay station receives a transmission from a ship that no longer exists.</div>
-        <div class="show-meta">
-          <div class="show-meta-row">Audio <span>Binaural 3D Spatial</span></div>
+        <div class="show-poster">
+          <img src="/images/SIGNALLOST_SHOWCARD_01_20260426.jpg" alt="Signal Lost"/>
         </div>
-        <div class="show-status">In Development</div>
+        <div class="show-badge">Coming Soon</div>
+        <div class="show-body">
+          <div class="show-tag">Pilot Phase</div>
+          <div class="show-title">Signal Lost</div>
+          <div class="show-genre">Sci-Fi Thriller</div>
+          <div class="show-desc">A deep-space relay station receives a transmission from a ship that no longer exists.</div>
+          <div class="show-meta">
+            <div class="show-meta-item">Binaural 3D</div>
+          </div>
+        </div>
       </div>
 
     </div>
