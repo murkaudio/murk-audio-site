@@ -238,27 +238,31 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
 .show-meta{display:flex;gap:12px;margin-top:10px;padding-top:10px;border-top:0.5px solid rgba(30,60,100,0.14);}
 .show-meta-item{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:7px;letter-spacing:2px;color:#4a6880;text-transform:uppercase;}
 .show-badge{position:absolute;top:10px;right:10px;font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:8px;letter-spacing:3px;padding:5px 10px;text-transform:uppercase;}
-.badge-dev{color:#aad4f8;border:1px solid rgba(64,128,192,0.6);background:rgba(8,18,38,0.92);}
-.badge-soon{color:#88b8d8;border:1px solid rgba(40,80,120,0.5);background:rgba(5,10,20,0.92);}
-.badge-prod{color:#7fffb0;border:1px solid rgba(0,200,100,0.6);background:rgba(0,20,10,0.92);}
-/* Per-card colors — horror */
+
+/* Per-card colors — horror / purple */
 .show-card.horror{border-color:rgba(80,40,140,0.3);background:#08060e;}
 .show-card.horror .show-title{color:#a868d8;}
 .show-card.horror .show-genre{color:rgba(140,80,180,0.8);}
 .show-card.horror .show-tag{color:rgba(140,80,180,0.6);}
 .show-card.horror .show-meta{border-top-color:rgba(80,40,140,0.14);}
-/* Per-card colors — noir */
+.show-card.horror .show-badge{color:#a868d8;border:1px solid rgba(168,104,216,0.6);background:rgba(8,6,14,0.92);}
+
+/* Per-card colors — noir / gold */
 .show-card.noir{border-color:rgba(160,130,60,0.25);background:#080600;}
 .show-card.noir .show-title{color:#c8a848;}
 .show-card.noir .show-genre{color:rgba(180,150,80,0.8);}
 .show-card.noir .show-tag{color:rgba(180,150,80,0.6);}
 .show-card.noir .show-meta{border-top-color:rgba(160,130,60,0.14);}
-/* Per-card colors — scifi */
+.show-card.noir .show-badge{color:#c8a848;border:1px solid rgba(200,168,72,0.6);background:rgba(8,6,0,0.92);}
+
+/* Per-card colors — scifi / blue */
 .show-card.scifi{border-color:rgba(40,120,180,0.25);background:#06080e;}
 .show-card.scifi .show-title{color:#68b8e8;}
 .show-card.scifi .show-genre{color:rgba(80,160,220,0.8);}
 .show-card.scifi .show-tag{color:rgba(80,160,220,0.6);}
 .show-card.scifi .show-meta{border-top-color:rgba(40,120,180,0.14);}
+.show-card.scifi .show-badge{color:#68b8e8;border:1px solid rgba(104,184,232,0.6);background:rgba(6,8,14,0.92);}
+
 .about-strip{padding:44px 24px;display:grid;grid-template-columns:1fr;gap:36px;align-items:start;border-bottom:0.5px solid rgba(64,128,192,0.07);}
 @media(min-width:720px){.about-strip{grid-template-columns:1fr 1fr;gap:52px;}}
 .about-pre{font-family:'Share Tech Mono',monospace,'Courier New',monospace;font-size:11px;letter-spacing:5px;color:#88bbee;margin-bottom:14px;text-transform:uppercase;}
@@ -321,29 +325,11 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
   <div class="sec-label">Current &amp; Upcoming Shows</div>
   <div class="shows-grid">
 
-    <div class="show-card featured horror">
-      <div class="show-poster">
-        <img src="/images/BLACKWOODMANOR_SHOWCARD_01_20260426.jpg" alt="Blackwood Manor" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="show-badge badge-dev">In Development</div>
-      <div class="show-body">
-        <div class="show-tag">Season 01 · Flagship Series</div>
-        <div class="show-title">Blackwood Manor</div>
-        <div class="show-genre">Gothic Horror</div>
-        <div class="show-desc">Something in the estate has been waiting. Eleven residents. One corridor. All changed.</div>
-        <div class="show-meta">
-          <div class="show-meta-item">6 Episodes</div>
-          <div class="show-meta-item">30–45 min</div>
-          <div class="show-meta-item">Binaural 3D</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="show-card noir">
+    <div class="show-card featured noir">
       <div class="show-poster">
         <img src="/images/DEADSIGNAL_SHOWCARD_01_20260426.jpg" alt="Dead Signal" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
-      <div class="show-badge badge-prod">In Production</div>
+      <div class="show-badge">In Production</div>
       <div class="show-body">
         <div class="show-tag">Production · Limited Series</div>
         <div class="show-title">Dead Signal</div>
@@ -357,16 +343,34 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
       </div>
     </div>
 
+    <div class="show-card horror">
+      <div class="show-poster">
+        <img src="/images/BLACKWOODMANOR_SHOWCARD_01_20260426.jpg" alt="Blackwood Manor" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+      <div class="show-badge">In Development</div>
+      <div class="show-body">
+        <div class="show-tag">Development · Season 1</div>
+        <div class="show-title">Blackwood Manor</div>
+        <div class="show-genre">Gothic Horror</div>
+        <div class="show-desc">Something in the estate has been waiting. Eleven residents. One corridor. All changed.</div>
+        <div class="show-meta">
+          <div class="show-meta-item">6 Episodes</div>
+          <div class="show-meta-item">30–45 min</div>
+          <div class="show-meta-item">Binaural 3D</div>
+        </div>
+      </div>
+    </div>
+
     <div class="show-card scifi">
       <div class="show-poster">
         <img src="/images/SIGNALLOST_SHOWCARD_01_20260426.jpg" alt="Signal Lost" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
-      <div class="show-badge badge-soon">Coming Soon</div>
+      <div class="show-badge">In Development</div>
       <div class="show-body">
-        <div class="show-tag">Pilot Phase</div>
+        <div class="show-tag">Development · Season 1</div>
         <div class="show-title">Signal Lost</div>
         <div class="show-genre">Sci-Fi Thriller</div>
-        <div class="show-desc">A deep-space relay station receives a transmission from a ship that no longer exists.</div>
+        <div class="show-desc">A deep-space relay station receives a transmission from an unknown source.</div>
         <div class="show-meta">
           <div class="show-meta-item">8 Episodes</div>
           <div class="show-meta-item">~35 min</div>
@@ -457,7 +461,6 @@ body{background:#050505;color:#e0e8f0;font-family:'Inter',sans-serif,'Helvetica 
     const cvs = document.createElement('canvas');
     const ctx = cvs.getContext('2d');
     ctx.font = '900 ' + fontSize + 'px Orbitron, Arial Black, Arial';
-    // MURK = 4 chars, letter-spacing applies between chars only (3 gaps), not after K
     const W = Math.round(ctx.measureText('MURK').width + ls * 3);
     return W;
   }
