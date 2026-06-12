@@ -1,0 +1,31 @@
+{
+  "engine": "Soldier Boy \u2014 KS Competitive Intelligence Scraper",
+  "last_sync": "2026-06-08T20:44:10.776645",
+  "total_tracked": 3,
+  "dataset": [
+    {
+      "campaign": "the-magnus-archives-2",
+      "url": "https://www.kickstarter.com/projects/the-magnus-archives2/the-magnus-archives-2",
+      "status": "active_tracking",
+      "total_pledged": "\u00a3718,641",
+      "backer_count": "11,215",
+      "captured_at": "2026-06-08T20:44:00.082933"
+    },
+    {
+      "campaign": "redacted-a-procedural-horror-audio-drama",
+      "url": "https://www.kickstarter.com/projects/theredactedunit/redacted-a-procedural-horror-audio-drama",
+      "status": "active_tracking",
+      "total_pledged": "$18,838",
+      "backer_count": "400",
+      "captured_at": "2026-06-08T20:44:04.456686"
+    },
+    {
+      "campaign": "last-dance-a-dark-fantasy-audio-drama",
+      "url": "https://www.kickstarter.com/projects/last-dance-series-2/last-dance-a-dark-fantasy-audio-drama",
+      "status": "active_tracking",
+      "total_pledged": "\u00a39,000",
+      "backer_count": "163",
+      "captured_at": "2026-06-08T20:44:10.776618"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "engine": "The Murk Core — Priority Contact Registry",
+    "last_updated": "2026-06-09"
+  },
+  "contacts": [
+    {
+      "name": "Ashley",
+      "email": "ashley@the-murk.audio",
+      "role": "Production Lead",
+      "status": "active",
+      "notes": "Internal Core Team."
+    },
+    {
+      "name": "Hughie",
+      "email": "hughie@the-murk.audio",
+      "role": "Campaign Strategist",
+      "status": "active",
+      "notes": "Internal Core Team."
+    },
+    {
+      "name": "Starlight",
+      "email": "starlight@the-murk.audio",
+      "role": "Grants Coordinator",
+      "status": "active",
+      "notes": "Internal Core Team."
+    },
+    {
+      "name": "Michelle",
+      "email": "michelle@digone.com",
+      "role": "Digital One Studio / Audio Post",
+      "status": "active",
+      "notes": "External Production Engineering Vendor."
+    },
+    {
+      "name": "Eric",
+      "email": "eric@digone.com",
+      "role": "Digital One Studio / Audio Post",
+      "status": "active",
+      "notes": "External Production Engineering Vendor."
+    },
+    {
+      "name": "Michael Gleason",
+      "email": "michael.gleason@sol.doi.gov",
+      "role": "Dept of the Interior / Solicitor Office",
+      "status": "active",
+      "notes": "Regulatory / Clearance Tracking Liaison."
+    },
+    {
+      "name": "Ben",
+      "email": "ben@pamcut.org",
+      "role": "PAM CUT (Portland Art Museum)",
+      "status": "active",
+      "notes": "Media Arts / Grant Pipeline Node."
+    },
+    {
+      "name": "Ryan Burghard",
+      "email": "ryan.burghard@biz.oregon.gov",
+      "role": "Business Oregon",
+      "status": "active",
+      "notes": "State Economic Development / Grants Management."
+    },
+    {
+      "name": "PCC SBDC Main Node",
+      "email": "sbdc@pcc.edu",
+      "role": "PCC Small Business Development",
+      "status": "active",
+      "notes": "Institutional Advising Infrastructure."
+    },
+    {
+      "name": "SBDC Client Advisor Portal",
+      "email": "centeric@clients.oregonsbdc.org",
+      "role": "Oregon SBDC Network",
+      "status": "active",
+      "notes": "Business Advising Strategy Tracking."
+    },
+    {
+      "name": "C. McCurdy",
+      "email": "cmccurdy@wweek.com",
+      "role": "Willamette Week Editorial",
+      "status": "active",
+      "notes": "Local PR / Press Pitch Target."
+    },
+    {
+      "name": "A. Mesh",
+      "email": "amesh@wweek.com",
+      "role": "Willamette Week Editorial",
+      "status": "active",
+      "notes": "Local PR / Press Pitch Target."
+    },
+    {
+      "name": "Editorial Desk",
+      "email": "editor@pdxmonthly.com",
+      "role": "Portland Monthly Magazine",
+      "status": "active",
+      "notes": "Regional PR / Feature Coverage Target."
+    },
+    {
+      "name": "Sam",
+      "email": "sam@nwdocumentary.org",
+      "role": "Northwest Documentary",
+      "status": "active",
+      "notes": "Fiscal Sponsorship Pipeline Manager."
+    },
+    {
+      "name": "The Sonic Society Desk",
+      "email": "sonicsociety@gmail.com",
+      "role": "Sonic Society Broadcast Showcase",
+      "status": "active",
+      "notes": "Audio Fiction Audio Distribution Syndicate."
+    },
+    {
+      "name": "Chase Business Ink (*8063)",
+      "email": "chase.com",
+      "role": "Corporate Credit Node",
+      "status": "active",
+      "notes": "Operational Expenditure Telemetry Endpoint."
+    },
+    {
+      "name": "Peter Vaughn",
+      "email": "pv@pdxsa.com",
+      "role": "External Legal / Former Counsel",
+      "status": "archived",
+      "notes": "Business definitively concluded for talent agreements. Permanently suppressed from reporting matrix."
+    }
+  ]
+}

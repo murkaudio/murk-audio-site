@@ -1,0 +1,32 @@
+{
+  "scraped_at": "2026-06-12T07:06:05.293Z",
+  "source_engine": "press-mention-monitor.js",
+  "extracted_metrics": {
+    "Metric": {
+      "title": [
+        {
+          "text": {
+            "content": "Press Mentions (24h)"
+          }
+        }
+      ]
+    },
+    "Value": {
+      "number": 0
+    },
+    "Source": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "Soldier Boy scraper — Google Alerts RSS + Podchaser"
+          }
+        }
+      ]
+    },
+    "Last Updated": {
+      "date": {
+        "start": "2026-06-12"
+      }
+    }
+  }
+}

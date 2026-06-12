@@ -1,0 +1,41 @@
+{
+  "scraped_at": "2026-06-12T07:07:04.976Z",
+  "source_engine": "podcast-charts.js",
+  "extracted_metrics": {
+    "Metric": {
+      "title": [
+        {
+          "text": {
+            "content": "Apple Charts — Dead Signal Rank"
+          }
+        }
+      ]
+    },
+    "Value": {
+      "number": 0
+    },
+    "Notes": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "Not yet charting as of Jun 12, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Five Miles From Home, #5 Dateline NBC, #6 Mick Unplugged, #7 Morbid, #8 Up First from NPR, #9 The Bill Simmons Podcast, #10 Good Hang with Amy Poehler"
+          }
+        }
+      ]
+    },
+    "Source": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "Apple Podcasts RSS chart feed"
+          }
+        }
+      ]
+    },
+    "Last Updated": {
+      "date": {
+        "start": "2026-06-12"
+      }
+    }
+  }
+}

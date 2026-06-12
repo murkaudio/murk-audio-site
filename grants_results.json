@@ -1,0 +1,95 @@
+{
+  "total_sources": 8,
+  "scraped_at": "2026-06-11T10:36:50.024491",
+  "sources": [
+    {
+      "source": "Oregon Arts Commission",
+      "url": "https://oregonartscommission.org/grants",
+      "status": "success",
+      "findings": [
+        "To\u00a0enhance the quality of life for all Oregonians through the artsby stimulating creativity, leadership and economic vitality.",
+        "Oregon in Top 10 of America\u2019s Most Arts-Vibrant Communities",
+        "Funds activate community building across Oregon: From youth education to public art and cultural engagement, 52 organizations will receive Arts Build Communities grants",
+        "Arts and culture contribute $829 million to Oregon economy",
+        "Artists: Please join the Oregon Artist Registry!",
+        "26\u00a0Oregon artists receive Career Opportunity Program grant awards",
+        "'50 for 50:' Celebrating 50 Years of Oregon's Percent for Art in Public Places",
+        "Imagine a world without the arts"
+      ],
+      "scraped_at": "2026-06-11T10:36:40.716874"
+    },
+    {
+      "source": "RACC",
+      "url": "https://racc.org/grants/",
+      "status": "success",
+      "findings": [],
+      "scraped_at": "2026-06-11T10:36:41.102011"
+    },
+    {
+      "source": "Friends of Noise",
+      "url": "https://www.friendsofnoise.org/grants",
+      "status": "success",
+      "findings": [
+        "The page you requested could not be found. Try refining your search, or use the navigation above to locate the post."
+      ],
+      "scraped_at": "2026-06-11T10:36:44.128032"
+    },
+    {
+      "source": "Awesome Foundation Portland",
+      "url": "https://www.awesomefoundation.org/en/chapters/portland",
+      "status": "success",
+      "findings": [
+        "Conservation and Climate",
+        "Kitchener-Waterloo",
+        "Burlingame-San Mateo, CA",
+        "Hamilton-Wenham, MA",
+        "New York City, NY",
+        "North Minneapolis, MN",
+        "Philadelphia, PA",
+        "Poughkeepsie, NY"
+      ],
+      "scraped_at": "2026-06-11T10:36:44.973064"
+    },
+    {
+      "source": "Fractured Atlas",
+      "url": "https://www.fracturedatlas.org/fiscal-sponsorship",
+      "status": "success",
+      "findings": [
+        "Fundraising is a skill you need to realize your projects: fiscal sponsorship is the tool that makes fundraising possible.",
+        "Through fiscal sponsorship, you can leverage some of the benefits of Fractured Atlas\u2019s tax-exempt status toaccess discounted space, solicit tax-deductible donations, and apply for funding from corporations and foundations.",
+        "WHAT IS FISCAL SPONSORSHIP?",
+        "In other words: we built an entire organization so that you don\u2019t have to AND you can use our organization to catalyze your creativity.",
+        "Raise funds. Motivate donors. Create something excellent. Handle your business.",
+        "WHAT CAN YOU DO WITH FISCAL SPONSORSHIP?",
+        "Fiscal sponsorship allows you to use the tools we offer to support your work. We know that there\u2019s no \u201cone-size-fits-all\u201d solution and you are the expert on what you\u2019re creating. You can use any or all of our tools to customize the support you need. With fiscal sponsorship, you can:",
+        "Solicit funds which are eligible for tax-deduction to your donors."
+      ],
+      "scraped_at": "2026-06-11T10:36:45.589729"
+    },
+    {
+      "source": "NW Documentary",
+      "url": "https://nwdocumentary.org/fiscal-sponsorship/",
+      "status": "success",
+      "findings": [],
+      "scraped_at": "2026-06-11T10:36:49.053900"
+    },
+    {
+      "source": "AIR Media",
+      "url": "https://airmedia.org/resources/grants/",
+      "status": "success",
+      "findings": [
+        "Secondary navigation"
+      ],
+      "scraped_at": "2026-06-11T10:36:49.306079"
+    },
+    {
+      "source": "Oregon Community Foundation",
+      "url": "https://oregoncf.org/grants-and-programs/",
+      "status": "success",
+      "findings": [
+        "Maybe we can point you in the right direction. Here are some helpful links:"
+      ],
+      "scraped_at": "2026-06-11T10:36:50.024453"
+    }
+  ]
+}
