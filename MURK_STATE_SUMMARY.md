@@ -36,3 +36,10 @@
 1. **Marie SOTM Audit Gate:** Nightly scraper engines are generating unverified data fields. Mandatory URL verification and human pre-screen gates must be implemented before any automated rows commit to the ledger.
 2. **Kickstarter Strategy Discrepancies:** Surfaced a May 13 session export containing outdated milestones (June 2 launch dates). Text templates and Blackwood Manor legacy strings must be manually rewritten to reference SBU before campaign deployment.
 3. **Rolling PI Update:** Execution of Project Intelligence PI v6.11 deferred to next session start to prioritize architecture and budget stabilization.
+
+## 🫐 SYSTEM STATE DELTAS // LOGGED JUNE 12, 2026
+* **Legal & Compliance:** Oregon LLC and USPTO T-2 monitoring constraints both successfully verified and cleared. Next LLC renewal confirmed for April 17, 2027.
+* **Source Verification Gate:** Ground-truth confirmation logic applied to Ashley's processing channel; market research tool fallbacks enforced.
+* **Governance Framework:** Automated runner structural gaps for Ashley and Hughie components explicitly flagged for systemic weekend code rebuilds.
+* **Campaign Definitions:** BEFORE THE SIGNAL countdown timeline locked to August 9-15 parameters.
+* **Portfolio Synchronization:** Stale timeline references purged from SBU project paths; tracking windows realigned.
