@@ -1,6 +1,6 @@
 {
   "total_sources": 8,
-  "scraped_at": "2026-06-11T10:36:50.024491",
+  "scraped_at": "2026-06-12T12:44:31.332584",
   "sources": [
     {
       "source": "Oregon Arts Commission",
@@ -16,14 +16,23 @@
         "'50 for 50:' Celebrating 50 Years of Oregon's Percent for Art in Public Places",
         "Imagine a world without the arts"
       ],
-      "scraped_at": "2026-06-11T10:36:40.716874"
+      "scraped_at": "2026-06-12T12:44:17.329272"
     },
     {
       "source": "RACC",
       "url": "https://racc.org/grants/",
       "status": "success",
-      "findings": [],
-      "scraped_at": "2026-06-11T10:36:41.102011"
+      "findings": [
+        "The Regional Arts & Culture Council partners with private, nonprofit, and government entities to advance and boost artist services and creative communities across our region through grant programs and partnerships.",
+        "We're Here to Help!",
+        "FY26 Washington County Sponsorship Awardees",
+        "Second Round of Portland Arts Project Grants Awards $1,220,000 to 274 Artists and Organizations",
+        "FY26 Portland Arts Project Grant Awardees",
+        "RACC Grant Administration Guide",
+        "$116,000 in Professional Development Grants Awarded to 74 Artists!",
+        "FY25 Professional Development Grant Program"
+      ],
+      "scraped_at": "2026-06-12T12:44:21.774553"
     },
     {
       "source": "Friends of Noise",
@@ -32,7 +41,7 @@
       "findings": [
         "The page you requested could not be found. Try refining your search, or use the navigation above to locate the post."
       ],
-      "scraped_at": "2026-06-11T10:36:44.128032"
+      "scraped_at": "2026-06-12T12:44:24.505457"
     },
     {
       "source": "Awesome Foundation Portland",
@@ -48,7 +57,7 @@
         "Philadelphia, PA",
         "Poughkeepsie, NY"
       ],
-      "scraped_at": "2026-06-11T10:36:44.973064"
+      "scraped_at": "2026-06-12T12:44:25.384537"
     },
     {
       "source": "Fractured Atlas",
@@ -64,23 +73,21 @@
         "Fiscal sponsorship allows you to use the tools we offer to support your work. We know that there\u2019s no \u201cone-size-fits-all\u201d solution and you are the expert on what you\u2019re creating. You can use any or all of our tools to customize the support you need. With fiscal sponsorship, you can:",
         "Solicit funds which are eligible for tax-deduction to your donors."
       ],
-      "scraped_at": "2026-06-11T10:36:45.589729"
+      "scraped_at": "2026-06-12T12:44:26.106006"
     },
     {
       "source": "NW Documentary",
       "url": "https://nwdocumentary.org/fiscal-sponsorship/",
       "status": "success",
       "findings": [],
-      "scraped_at": "2026-06-11T10:36:49.053900"
+      "scraped_at": "2026-06-12T12:44:30.591962"
     },
     {
       "source": "AIR Media",
       "url": "https://airmedia.org/resources/grants/",
       "status": "success",
-      "findings": [
-        "Secondary navigation"
-      ],
-      "scraped_at": "2026-06-11T10:36:49.306079"
+      "findings": [],
+      "scraped_at": "2026-06-12T12:44:30.751708"
     },
     {
       "source": "Oregon Community Foundation",
@@ -89,7 +96,7 @@
       "findings": [
         "Maybe we can point you in the right direction. Here are some helpful links:"
       ],
-      "scraped_at": "2026-06-11T10:36:50.024453"
+      "scraped_at": "2026-06-12T12:44:31.332537"
     }
   ]
 }
