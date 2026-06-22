@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-21T07:07:05.749Z",
+  "scraped_at": "2026-06-22T07:07:06.047Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Jun 21, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Dateline NBC, #5 Mick Unplugged, #6 Dr. Death, #7 Up First from NPR, #8 Morbid, #9 Pod Save America, #10 Serial"
+            "content": "Not yet charting as of Jun 22, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Dateline NBC, #5 Pod Save America, #6 Mick Unplugged, #7 Dr. Death, #8 20/20, #9 Up First from NPR, #10 Morbid"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-06-21"
+        "start": "2026-06-22"
       }
     }
   }
