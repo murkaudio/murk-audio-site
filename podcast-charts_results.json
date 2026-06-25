@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-24T07:07:05.626Z",
+  "scraped_at": "2026-06-25T07:07:21.871Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Jun 24, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 Dateline NBC, #4 The Joe Rogan Experience, #5 Pod Save America, #6 Mick Unplugged, #7 Up First from NPR, #8 The Bill Simmons Podcast, #9 Morbid, #10 Digital Social Hour"
+            "content": "Not yet charting as of Jun 25, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Dateline NBC, #5 The Bill Simmons Podcast, #6 Mick Unplugged, #7 Pardon My Take, #8 Up First from NPR, #9 Pod Save America, #10 Good Hang with Amy Poehler"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-06-24"
+        "start": "2026-06-25"
       }
     }
   }
