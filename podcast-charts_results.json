@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-05T07:07:35.834Z",
+  "scraped_at": "2026-07-06T07:07:04.538Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Jul 5, 2026. Pre-launch. Top 10: "
+            "content": "Not yet charting as of Jul 6, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Dateline NBC, #5 Morbid, #6 Mick Unplugged, #7 Up First from NPR, #8 The Rest Is History, #9 Love Trapped, #10 The Shawn Ryan Show"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-07-05"
+        "start": "2026-07-06"
       }
     }
   }
