@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-19T07:07:01.482Z",
+  "scraped_at": "2026-07-20T07:07:35.298Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Jul 19, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Crime Junkie, #4 Dateline NBC, #5 Morbid, #6 Mick Unplugged, #7 Good Hang with Amy Poehler, #8 Pod Save America, #9 Up First from NPR, #10 World War II with Tom Hanks"
+            "content": "Not yet charting as of Jul 20, 2026. Pre-launch. Top 10: "
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-07-19"
+        "start": "2026-07-20"
       }
     }
   }
