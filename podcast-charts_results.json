@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-04T07:07:02.586Z",
+  "scraped_at": "2026-08-05T07:07:05.655Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Aug 4, 2026. Pre-launch. Top 10: #1 Crime Junkie, #2 The Daily, #3 The Joe Rogan Experience, #4 Pardon My Take, #5 Mick Unplugged, #6 Morbid, #7 Dateline NBC, #8 Up First from NPR, #9 REAL AF with Andy Frisella, #10 This American Life"
+            "content": "Not yet charting as of Aug 5, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 Dateline NBC, #4 The Joe Rogan Experience, #5 Pod Save America, #6 Mick Unplugged, #7 Morbid, #8 Up First from NPR, #9 Good Hang with Amy Poehler, #10 REAL AF with Andy Frisella"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-08-04"
+        "start": "2026-08-05"
       }
     }
   }
