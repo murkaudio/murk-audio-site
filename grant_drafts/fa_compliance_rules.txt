@@ -1,0 +1,14 @@
+====================================================================
+FRACTURED ATLAS MANDATORY GRANT COMPLIANCE RULES
+====================================================================
+
+1. REQUIRED STANDARD COPY GATE SEGMENT
+The following text segment must appear verbatim inside your cover letter or 
+within the application narrative body text:
+
+"Fractured Atlas will receive grants for the charitable purposes of The Murk Audio LLC, provide oversight to ensure that grant funds are used in accordance with grant agreements, and provide reports as required by the grantor. Contributions for the charitable purposes of The Murk Audio LLC must be made payable to Fractured Atlas and are tax deductible to the extent permitted by law."
+
+2. FINANCIAL LINE-ITEM REQUIREMENT
+When constructing your financial budget matrix, you must include the Fractured 
+Atlas 8% administrative fee as an explicit line-item expense calculation.
+====================================================================

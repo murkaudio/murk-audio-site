@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Murk Audio — Live Dashboard</title>
+    <style>
+        :root {
+            --bg-main: #0d0f12;
+            --bg-card: #161a1f;
+            --border: #232931;
+            --text-main: #f0f4f8;
+            --text-muted: #8795a5;
+            --accent: #ff9100;
+            --accent-green: #00e676;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-main); color: var(--text-main); padding: 40px 20px; display: flex; justify-content: center; }
+        .container { width: 100%; max-width: 900px; background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+        header { margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px; display: flex; justify-content: space-between; align-items: center; }
+        h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; }
+        h1 span { color: var(--accent); }
+        .timestamp { font-size: 12px; color: var(--text-muted); }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        tr { border-bottom: 1px solid rgba(35, 41, 49, 0.5); }
+        td { padding: 14px 16px; font-size: 14px; vertical-align: middle; }
+        .section-header td { background-color: rgba(255, 145, 0, 0.05); color: var(--accent); font-weight: 700; font-size: 14px; letter-spacing: 0.5px; border-left: 3px solid var(--accent); padding: 12px 16px; }
+        .metric-label { font-weight: 500; color: var(--text-main); width: 45%; }
+        .metric-value { font-weight: 700; color: #ffffff; width: 20%; }
+        .metric-notes { color: var(--text-muted); font-size: 13px; width: 35%; }
+        .highlight-row { background-color: rgba(0, 230, 118, 0.02); }
+        .highlight-row .metric-value { color: var(--accent-green); font-size: 15px; }
+        .divider { height: 1px; background-color: var(--border); margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>THE MURK AUDIO <span>// LIVE METRICS</span></h1>
+            <div class="timestamp">Sync Time: July 02, 2026 at 01:19 PM</div>
+        </header>
+        <table>
+            <tbody>
+                
+                <tr class="">
+                    <td class="metric-label">Transaction_ID</td>
+                    <td class="metric-value">Linked_Task_ID</td>
+                    <td class="metric-notes">Metric_Source</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-001</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-002</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-003</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-004</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-005</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-006</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-007</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-008</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-009</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-010</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-011</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-012</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-013</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-014</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-015</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-016</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-017</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-018</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-019</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-020</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-021</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-022</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-023</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-024</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-025</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-026</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-027</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-028</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-029</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-030</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-031</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-032</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-033</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-034</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-035</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-036</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-037</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-040</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-041</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-042</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-043</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-044</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-045</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-046</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-047</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-048</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-049</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-050</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-051</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-052</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-053</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-054</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-055</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-056</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-057</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-058</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-059</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-060</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-061</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-062</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-063</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-066</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-065</td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-067</td>
+                    <td class="metric-value">PROD-325</td>
+                    <td class="metric-notes">Grant Application — Foundation for Contemporary Arts Emergency Grant [Val: 3000]</td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-068</td>
+                    <td class="metric-value">PROD-304</td>
+                    <td class="metric-notes">Grant Application — Awesome Foundation Portland [Val: 1000]</td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-069</td>
+                    <td class="metric-value">PROD-326</td>
+                    <td class="metric-notes">Grant Application — Awesome Foundation Seattle [Val: 750]</td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-070</td>
+                    <td class="metric-value">PROD-305</td>
+                    <td class="metric-notes">Grant Application — Content is Queen Making Waves Programme [Val: GBP 1000]</td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-071</td>
+                    <td class="metric-value">PROD-362</td>
+                    <td class="metric-notes">Grant Application — MØRNING People Fund [Val: GBP 4000]</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-072</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-073</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-074</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-075</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-076</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-077</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-078</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-079</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-080</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-081</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3"></td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3"></td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-082</td>
+                    <td class="metric-value">PROD-120</td>
+                    <td class="metric-notes">Fiverr — Saeed (@memonsaeed) KS Graphics Order #FO837C8401708</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-083</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-084</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-085</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-086</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-087</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-088</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-089</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-090</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-091</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-092</td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-093</td>
+                    <td class="metric-value">PROD-144</td>
+                    <td class="metric-notes">SBU Talent Agreement — Principal Cast #1 [Val: 500]</td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-094</td>
+                    <td class="metric-value">PROD-144</td>
+                    <td class="metric-notes">SBU Talent Agreement — Principal Cast #2 [Val: 500]</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-095</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-096</td>
+                </tr>
+                
+                <tr class="section-header">
+                    <td colspan="3">FIN-097</td>
+                </tr>
+                
+                <tr class="">
+                    <td class="metric-label">FIN-098</td>
+                    <td class="metric-value">PROD-112</td>
+                    <td class="metric-notes">KS Countdown Post Engagement — '3 days' post [Val: 31 views]</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
