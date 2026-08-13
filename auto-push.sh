@@ -12,9 +12,9 @@ print(f"[GIT_ENGINE] Initializing secure upstream push for {TIMESTAMP}...")
 try:
     os.chdir(REPO_DIR)
     
-    json_files = [f for f in os.listdir(REPO_DIR) if f.endswith('.json')]
+    json_files = [f for f in os.listdir(REPO_DIR) if f.endswith('.json') and 'service_account' not in str(f)]
     if json_files:
-        subprocess.run(["git", "add"] + json_files, check=True)
+        subprocess.run(["git", "add", "--ignore-errors"] + json_files, check=True)
     
     diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"])
     
@@ -26,7 +26,7 @@ try:
         print("[GIT_ENGINE] No new layout mutations detected to commit.")
 
     print("[GIT_ENGINE] Synchronizing upstream remote telemetry branch...")
-    subprocess.run(["git", "push", "origin", "main:telemetry"], check=True)
+    subprocess.run(["git", "push", "origin", "main:telemetry", "--force"], check=True)
     print("[GIT_ENGINE] Success. Upstream repository synchronized cleanly.")
     print("[GITHUB_PUSH_SUCCESS]")
 
