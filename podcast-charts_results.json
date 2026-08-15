@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-14T07:07:04.622Z",
+  "scraped_at": "2026-08-15T07:07:06.809Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Aug 14, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Dateline NBC, #5 What Happened to the McStays?, #6 Mick Unplugged, #7 Up First from NPR, #8 Good Hang with Amy Poehler, #9 REAL AF with Andy Frisella, #10 The Dylan Gemelli Podcast"
+            "content": "Not yet charting as of Aug 15, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Crime Junkie, #4 Dateline NBC, #5 What Happened to the McStays?, #6 Pardon My Take, #7 Up First from NPR, #8 Mick Unplugged, #9 Pod Save America, #10 Good Hang with Amy Poehler"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-08-14"
+        "start": "2026-08-15"
       }
     }
   }
