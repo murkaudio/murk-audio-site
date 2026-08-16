@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15T07:07:06.809Z",
+  "scraped_at": "2026-08-16T07:07:06.069Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Aug 15, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Crime Junkie, #4 Dateline NBC, #5 What Happened to the McStays?, #6 Pardon My Take, #7 Up First from NPR, #8 Mick Unplugged, #9 Pod Save America, #10 Good Hang with Amy Poehler"
+            "content": "Not yet charting as of Aug 16, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Crime Junkie, #4 Dateline NBC, #5 Up First from NPR, #6 What Happened to the McStays?, #7 Mick Unplugged, #8 Good Hang with Amy Poehler, #9 Pod Save America, #10 Morbid"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-08-15"
+        "start": "2026-08-16"
       }
     }
   }
