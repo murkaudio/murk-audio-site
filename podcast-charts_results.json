@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-19T07:07:03.048Z",
+  "scraped_at": "2026-08-20T07:07:35.105Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Aug 19, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Truth About Natalie, #4 Dateline NBC, #5 The Joe Rogan Experience, #6 Pod Save America, #7 Good Hang with Amy Poehler, #8 Up First from NPR, #9 Morbid, #10 Pardon My Take"
+            "content": "Not yet charting as of Aug 20, 2026. Pre-launch. Top 10: "
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-08-19"
+        "start": "2026-08-20"
       }
     }
   }
