@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-20T07:07:35.105Z",
+  "scraped_at": "2026-08-21T07:07:34.281Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Aug 20, 2026. Pre-launch. Top 10: "
+            "content": "Not yet charting as of Aug 21, 2026. Pre-launch. Top 10: "
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-08-20"
+        "start": "2026-08-21"
       }
     }
   }
