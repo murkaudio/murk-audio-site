@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-28T07:07:29.754Z",
+  "scraped_at": "2026-08-29T07:07:05.671Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Aug 28, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Crime Junkie, #4 Dateline NBC, #5 Mick Unplugged, #6 Dolly Parton's America, #7 The Truth About Natalie, #8 Up First from NPR, #9 The Rest Is History, #10 Morbid"
+            "content": "Not yet charting as of Aug 29, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Crime Junkie, #4 Mick Unplugged, #5 Dateline NBC, #6 Pardon My Take, #7 Pod Save America, #8 Morbid, #9 Dolly Parton's America, #10 The Truth About Natalie"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-08-28"
+        "start": "2026-08-29"
       }
     }
   }
