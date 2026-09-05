@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-04T07:07:02.981Z",
+  "scraped_at": "2026-09-05T07:07:02.529Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Sep 4, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Dateline NBC, #5 COERCED: The Devotion & Death of Mica Francis Miller, #6 Mick Unplugged, #7 Love Trapped, #8 Morbid, #9 REAL AF with Andy Frisella, #10 Up First from NPR"
+            "content": "Not yet charting as of Sep 5, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 COERCED: The Devotion & Death of Mica Francis Miller, #5 Dateline NBC, #6 Pardon My Take, #7 Morbid, #8 Mick Unplugged, #9 Pod Save America, #10 REAL AF with Andy Frisella"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-09-04"
+        "start": "2026-09-05"
       }
     }
   }
