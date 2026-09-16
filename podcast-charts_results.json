@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-15T07:07:35.754Z",
+  "scraped_at": "2026-09-16T07:07:05.632Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Sep 15, 2026. Pre-launch. Top 10: "
+            "content": "Not yet charting as of Sep 16, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Good Hang with Amy Poehler, #5 REAL AF with Andy Frisella, #6 Morbid, #7 Pod Save America, #8 The Dylan Gemelli Podcast, #9 Mick Unplugged, #10 In The Dark"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-09-15"
+        "start": "2026-09-16"
       }
     }
   }
