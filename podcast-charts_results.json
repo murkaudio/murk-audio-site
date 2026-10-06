@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-05T07:07:06.836Z",
+  "scraped_at": "2026-10-06T07:07:06.765Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Oct 5, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 REAL AF with Andy Frisella, #4 Dateline NBC, #5 The Dylan Gemelli Podcast, #6 Pod Save America, #7 Mick Unplugged, #8 The Joe Rogan Experience, #9 Passion Struck with John R. Miles, #10 20/20"
+            "content": "Not yet charting as of Oct 6, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 Reaching Out, #4 Proven Podcast, #5 Unblinded with Sean Callagy, #6 Young and Profiting (YAP) with Hala Taha: Entrepreneurship and Self-Improvement Podcast, #7 Habits and Hustle, #8 The Woman in the Woods, #9 The Joe Rogan Experience, #10 Passion Struck with John R. Miles"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-10-05"
+        "start": "2026-10-06"
       }
     }
   }
