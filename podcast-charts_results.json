@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-06T07:07:06.765Z",
+  "scraped_at": "2026-10-07T07:07:34.137Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Oct 6, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 Reaching Out, #4 Proven Podcast, #5 Unblinded with Sean Callagy, #6 Young and Profiting (YAP) with Hala Taha: Entrepreneurship and Self-Improvement Podcast, #7 Habits and Hustle, #8 The Woman in the Woods, #9 The Joe Rogan Experience, #10 Passion Struck with John R. Miles"
+            "content": "Not yet charting as of Oct 7, 2026. Pre-launch. Top 10: "
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-10-06"
+        "start": "2026-10-07"
       }
     }
   }
