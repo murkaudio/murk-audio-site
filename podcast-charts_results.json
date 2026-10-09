@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-08T07:07:31.554Z",
+  "scraped_at": "2026-10-09T07:07:04.986Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Oct 8, 2026. Pre-launch. Top 10: "
+            "content": "Not yet charting as of Oct 9, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 In The Dark, #5 Dateline NBC, #6 Good Hang with Amy Poehler, #7 Up First from NPR, #8 Morbid, #9 Reaching Out, #10 The Shawn Ryan Show"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-10-08"
+        "start": "2026-10-09"
       }
     }
   }
