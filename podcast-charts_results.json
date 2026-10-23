@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-22T07:07:04.169Z",
+  "scraped_at": "2026-10-23T07:07:08.043Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Oct 22, 2026. Pre-launch. Top 10: "
+            "content": "Not yet charting as of Oct 23, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 Dateline NBC, #4 The Builders, #5 The Joe Rogan Experience, #6 METRO with Sarah Koenig, #7 Up First from NPR, #8 Morbid, #9 Good Hang with Amy Poehler, #10 Betrayal Season 6"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-10-22"
+        "start": "2026-10-23"
       }
     }
   }
