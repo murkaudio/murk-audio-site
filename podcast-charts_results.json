@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-30T07:07:06.294Z",
+  "scraped_at": "2026-10-31T07:07:07.299Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Oct 30, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Dateline NBC, #5 Good Hang with Amy Poehler, #6 The Builders, #7 Up First from NPR, #8 Mick Unplugged, #9 The Mel Robbins Podcast, #10 Bear Brook"
+            "content": "Not yet charting as of Oct 31, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 The Joe Rogan Experience, #4 Pod Save America, #5 Dateline NBC, #6 Good Hang with Amy Poehler, #7 Sold a Story, #8 Up First from NPR, #9 The Builders, #10 Bear Brook"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-10-30"
+        "start": "2026-10-31"
       }
     }
   }
