@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-01T07:06:05.264Z",
+  "scraped_at": "2026-11-02T08:06:04.339Z",
   "source_engine": "press-mention-monitor.js",
   "extracted_metrics": {
     "Metric": {
@@ -25,7 +25,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-11-01"
+        "start": "2026-11-02"
       }
     }
   }
