@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-02T08:07:05.252Z",
+  "scraped_at": "2026-11-03T08:07:35.472Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Nov 2, 2026. Pre-launch. Top 10: #1 Pod Save America, #2 The Daily, #3 The Joe Rogan Experience, #4 Crime Junkie, #5 SmartLess, #6 Dateline NBC, #7 Bear Brook, #8 Up First from NPR, #9 Good Hang with Amy Poehler, #10 Morbid"
+            "content": "Not yet charting as of Nov 3, 2026. Pre-launch. Top 10: "
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-11-02"
+        "start": "2026-11-03"
       }
     }
   }
