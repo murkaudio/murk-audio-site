@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-06T08:07:08.460Z",
+  "scraped_at": "2026-11-07T08:07:35.633Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Nov 6, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Dateline NBC, #4 Crime Junkie, #5 Pod Save America, #6 Up First from NPR, #7 The Ezra Klein Show, #8 Morbid, #9 The Megyn Kelly Show, #10 The Weekly Show with Jon Stewart"
+            "content": "Not yet charting as of Nov 7, 2026. Pre-launch. Top 10: "
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-11-06"
+        "start": "2026-11-07"
       }
     }
   }
