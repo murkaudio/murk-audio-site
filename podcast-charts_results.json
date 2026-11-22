@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-21T08:07:05.605Z",
+  "scraped_at": "2026-11-22T08:07:05.046Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Nov 21, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Dateline NBC, #4 Pod Save America, #5 Crime Junkie, #6 Up First from NPR, #7 Pardon My Take, #8 Morbid, #9 The Bill Simmons Podcast, #10 The Toast"
+            "content": "Not yet charting as of Nov 22, 2026. Pre-launch. Top 10: #1 The Daily, #2 The Joe Rogan Experience, #3 Crime Junkie, #4 Dateline NBC, #5 Up First from NPR, #6 Pod Save America, #7 Morbid, #8 20/20, #9 Pardon My Take, #10 The Ezra Klein Show"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-11-21"
+        "start": "2026-11-22"
       }
     }
   }
