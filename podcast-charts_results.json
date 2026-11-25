@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-24T08:07:34.593Z",
+  "scraped_at": "2026-11-25T08:07:05.796Z",
   "source_engine": "podcast-charts.js",
   "extracted_metrics": {
     "Metric": {
@@ -18,7 +18,7 @@
       "rich_text": [
         {
           "text": {
-            "content": "Not yet charting as of Nov 24, 2026. Pre-launch. Top 10: "
+            "content": "Not yet charting as of Nov 25, 2026. Pre-launch. Top 10: #1 The Daily, #2 Crime Junkie, #3 Dateline NBC, #4 The Joe Rogan Experience, #5 Pod Save America, #6 Up First from NPR, #7 Morbid, #8 Good Hang with Amy Poehler, #9 The Bill Simmons Podcast, #10 Pardon My Take"
           }
         }
       ]
@@ -34,7 +34,7 @@
     },
     "Last Updated": {
       "date": {
-        "start": "2026-11-24"
+        "start": "2026-11-25"
       }
     }
   }
